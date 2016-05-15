@@ -1,0 +1,242 @@
+﻿@model DocumentationGenerator.Models.MainModel
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Classic Expansion Pack 7.0s</title>
+    <style type="text/css">
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Helvetica, Arial, monospace;
+        }
+
+        h1 {
+            font-size: 36pt;
+        }
+
+        h2 {
+            font-size: 24pt;
+        }
+
+        .stagetable {
+            border-collapse: collapse;
+        }
+
+            .stagetable td {
+                border: 2px solid black;
+            }
+
+            .stagetable.alternate {
+                margin-left: 20px;
+            }
+
+            .stagetable .icon {
+                width: 66px;
+            }
+
+            .stagetable .song {
+                font-style: italic;
+            }
+
+            .stagetable .stagename {
+                font-family: Helvetica, Arial, monospace;
+                font-size: 32px;
+                font-weight: bold;
+                width: 400px;
+            }
+
+            .stagetable .pacname {
+                font-family: monospace;
+                font-size: 12pt;
+                text-align: right;
+                width: 430px;
+            }
+
+            .stagetable.alternate .pacname {
+                width: 410px;
+            }
+
+            .stagetable .notes {
+                font-size: 10pt;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+    </style>
+</head>
+<body>
+    <h1 align="center">
+        Classic Expansion Pack 7.0s<br>
+        <small>for Super Smash Bros. Brawl</small>
+    </h1>
+    <p>
+        This version of the Classic Expansion Pack is an add-on for Super
+        Smash Bros. Brawl, containing 37 additional stages that can be
+        used in multiplayer mode. The selection includes 35 stages from
+        Super Smash Bros. (Nintendo 64), Super Smash Bros. Melee
+        (GameCube) and Super Smash Bros. for Wii U, as well as the Online
+        Practice Stage and Midair Stadium from The Subspace Emissary.
+    </p>
+    <p>
+        These stages have been combined into a pack that adds them to the
+        Brawl stage roster, without replacing any existing stages. This is
+        done with the help of Phantom Wings' Stage Roster Expansion
+        System, a code that gives the framework for adding stages to
+        Brawl. The pack serves a dual purpose: it is fully playable out of
+        the box, but it also provides a framework for people to add their
+        own custom stages to the game. To replace the stages and stage
+        icons in this pack, you can try my <a href="http://www.lakora.us/brawl/stagemanager/">Stage Manager</a>
+        tool.<br>
+    </p>
+    <p>
+        This pack contains several Wii music files (.brstm), which
+        replace certain obscure tracks (mostly from The Subspace Emissary)
+        and are reassigned through the use of codes to play on several of
+        the added stages.<br>
+    </p>
+    <hr size="2" width="100%">
+    <p>
+        Official KC-MM thread for the Classic Expansion Pack: <a href="http://forums.kc-mm.com/index.php?topic=20291.0">http://forums.kc-mm.com/index.php?topic=20291.0</a><br>
+    </p>
+    <hr size="2" width="100%">
+    <p>
+        Requirements:<br>
+    </p>
+    <ul>
+        <li>
+            Wii or Wii U console (does not need to have any kind of
+            homebrew installed)
+        </li>
+        <li>An American copy of Super Smash Bros. Brawl</li>
+        <li>An SD card</li>
+    </ul>
+    <p>
+        Instructions:<br>
+    </p>
+    <ul>
+        <li>
+            Remove all Stage Builder stages from your SD card and your
+            Wii. (You can back them up on another SD card or on your
+            computer – they're in /private/wii/app/RSBE/st.)
+        </li>
+        <li>
+            Copy the “codes” and “private” folders and the “boot.elf” and
+            “gameconfig.txt” files to the root of your SD card. If you're
+            asked to merge a folder, choose yes. If you're asked to
+            overwrite a file, choose yes for that too. (If you have custom
+            portraits or stage icons in common5.pac, you should back that up
+            first.)
+        </li>
+        <li>
+            Once in Brawl's main menu, load the Classic Expansion Pack by
+            inserting the SD card and going to Options &gt; Stage Builder.
+            Press A (for “Launch Game”) when Gecko OS loads.
+        </li>
+    </ul>
+    <p>
+        If you want to keep your own mu_menumain.pac, export MiscData[80]
+        from sc_selmap.pac and use it to replace MiscData[0] in
+        mu_menumain.pac.
+    </p>
+    <p>
+        <b>
+            NOTE: Unlike previous versions, this pack comes with a
+            sc_selmap.pac instead of a common5.pac.
+        </b> If you have your own
+        common5.pac, replace the “sc_selmap_en” section in it with my
+        sc_selmap.pac file. (After doing this, sc_selmap.pac does not need
+        to be on the SD card.)<br>
+    </p>
+    <hr size="2" width="100%">
+    <p>
+        Other notes:<br>
+    </p>
+    <ul>
+        <li>
+            Any additional changes I made to the stages, as originally
+            posted on BrawlVault, are noted in bold/italic text.
+        </li>
+        <li>
+            All stages will be available on “random”, regardless of
+            whether they are enabled on the Random Stage Select screen. You
+            can turn this off by removing the Enable Random Expansion Stages
+            code from Codeset.txt and making a new GCT file from it.
+        </li>
+        <li>
+            All of the stages and songs have been rearranged since Classic
+            Expansion Pack 6.1s. Additionally, stages present in Project M
+            have been updated, along with a few others.
+        </li>
+    </ul>
+    <hr size="2" width="100%">
+    <h2 align="center">
+        <a name="Alternate_Stages"></a>Alternate Stages<br>
+    </h2>
+    <p>
+        Dantarion's Alternate Stage Loader code is enabled for every
+        stage in this pack, loading [NAME]_L.pac instead of [NAME].pac
+        when you hold L+A (or B+2 on a Wii Remote) while loading the
+        stage. For Battlefield and Final Destination, an additional stage
+        is made available by holding R+A.<br>
+    </p>
+    <p>
+        The following stages are included as alternates to stages
+        included with Brawl. All of them use the same module file as the
+        original stage.
+    </p>
+    <p>
+        Also note that the second song on Battlefield – T02.brstm,
+        originally <i>Menu (Super Smash Bros. Melee)</i> – has been
+        replaced with <i>Fighting Polygon Team (Super Smash Bros.)</i><br>
+    </p>
+    @{ 
+        BrawlManagerLib.Song song;
+    }
+    @foreach (var stage in Model.Stages) {
+        <table class="stagetable @(stage.Alternate ? "alternate" : "")" border="1" cellpadding="2" cellspacing="2">
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="icon" valign="top">
+                        @if (stage.PngIcon != null) {
+                            <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
+                        }
+                    </td>
+                    <td class="game" valign="top">
+                        @stage.Source
+                    </td>
+                    <td class="song" valign="top">
+                        @if (Model.Sdsl.TryGetSong(stage.Stage.ID, out song)) {
+                            @song.Filename
+                        } else if (stage.Stage.ID == 0x37) {
+                            @:X07
+                        }
+                        @stage.SongName
+                    </td>
+                </tr>
+                <tr>
+                    <td class="stagename" valign="top">
+                        @stage.Name
+                    </td>
+                    <td class="pacname" valign="bottom">
+                        (@stage.ModuleBase)
+                        <br />
+                        @stage.Filename
+                    </td>
+                </tr>
+                <tr>
+                    <td class="notes" colspan="3" valign="top">
+                        <a href="@(stage.BrawlVaultLink ?? stage.DirectLink)">
+                            @(stage.BrawlVaultLink ?? stage.DirectLink)
+                        </a><br />
+                        @if (stage.Author != null) {
+                            @:Author(s): @stage.Author<br />
+                        }
+                        @if (stage.MyChanges != null) {
+                            <b><i>@stage.MyChanges</i></b>
+                        }
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <br />
+    }
+</body>
+</html>
