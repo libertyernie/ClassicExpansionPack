@@ -148,17 +148,35 @@ namespace DocumentationGenerator.Controllers
         // GET: Default
         public ActionResult Index()
         {
+            Func<string, List<string>> split = s => {
+                List<string> list = new List<string>();
+                StringBuilder current = new StringBuilder();
+                bool inQuote = false;
+                foreach (char c in s) {
+                    if (c == '"') {
+                        inQuote = !inQuote;
+                    } else if (c == ',' && !inQuote) {
+                        list.Add(current.ToString());
+                        current.Clear();
+                    } else {
+                        current.Append(c);
+                    }
+                }
+                list.Add(current.ToString());
+                return list;
+            };
+
             List<CEPStage> stages = new List<CEPStage>();
-            string[] firstLine = null;
+            IList<string> firstLine = null;
             string csv = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\SD\DocumentationGenerator\stages.csv";
             foreach (string line in System.IO.File.ReadAllLines(csv, Encoding.UTF8)) {
                 if (firstLine == null) {
-                    firstLine = line.Split(',');
+                    firstLine = split(line);
                 } else {
                     CEPStage s = new CEPStage();
                     int i = 0;
-                    foreach (string cell in line.Split(',')) {
-                        if (cell != "") typeof(CEPStage).GetProperty(firstLine[i]).SetValue(s, cell);
+                    foreach (string cell in split(line)) {
+                        if (cell != "") typeof(CEPStage).GetProperty(firstLine[i])?.SetValue(s, cell);
                         i++;
                     }
                     stages.Add(s);

@@ -27,11 +27,11 @@
             }
 
             .stagetable.alternate {
-                margin-left: 20px;
+                margin-left: 74px;
             }
 
             .stagetable .icon {
-                width: 66px;
+                width: 68px;
             }
 
             .stagetable .song {
@@ -50,10 +50,6 @@
                 font-size: 12pt;
                 text-align: right;
                 width: 430px;
-            }
-
-            .stagetable.alternate .pacname {
-                width: 410px;
             }
 
             .stagetable .notes {
@@ -194,22 +190,24 @@
         <table class="stagetable @(stage.Alternate ? "alternate" : "")" border="1" cellpadding="2" cellspacing="2">
             <tbody>
                 <tr>
-                    <td rowspan="2" class="icon" valign="top">
-                        @if (stage.PngIcon != null) {
-                            <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
-                        }
-                    </td>
-                    <td class="game" valign="top">
+                    @if (stage.PngIcon != null) {
+                        <td rowspan="2" class="icon" valign="top">
+                                <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
+                        </td>
+                    }
+                    <td class="game" valign="top" colspan="@(stage.Alternate ? 2 : 1)">
                         @stage.Source
                     </td>
-                    <td class="song" valign="top">
-                        @if (Model.Sdsl.TryGetSong(stage.Stage.ID, out song)) {
-                            @song.Filename
-                        } else if (stage.Stage.ID == 0x37) {
-                            @:X07
-                        }
-                        @stage.SongName
-                    </td>
+                    @if (!stage.Alternate) {
+                        <td class="song" valign="top">
+                            @if (Model.Sdsl.TryGetSong(stage.Stage.ID, out song)) {
+                                @song.Filename
+                            } else if (stage.Stage.ID == 0x37) {
+                                @:X07
+                            }
+                            @stage.SongName
+                        </td>
+                    }
                 </tr>
                 <tr>
                     <td class="stagename" valign="top">
@@ -222,7 +220,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="notes" colspan="3" valign="top">
+                    <td class="notes" colspan="@(stage.Alternate ? 2 : 3)" valign="top">
                         <a href="@(stage.BrawlVaultLink ?? stage.DirectLink)">
                             @(stage.BrawlVaultLink ?? stage.DirectLink)
                         </a><br />
