@@ -33,7 +33,15 @@ namespace DocumentationGenerator {
 
         public string DirectLink { get; set; }
 
-        public string MyChanges { get; set; }
+        public string Link {
+            get {
+                return BrawlVaultLink ?? DirectLink;
+            }
+        }
+
+        public bool Imported { get; set; }
+
+        public string Notes { get; set; }
 
         public bool Alternate {
             get {

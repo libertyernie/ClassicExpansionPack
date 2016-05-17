@@ -176,7 +176,14 @@ namespace DocumentationGenerator.Controllers
                     CEPStage s = new CEPStage();
                     int i = 0;
                     foreach (string cell in split(line)) {
-                        if (cell != "") typeof(CEPStage).GetProperty(firstLine[i])?.SetValue(s, cell);
+                        if (cell != "") {
+                            var prop = typeof(CEPStage).GetProperty(firstLine[i]);
+                            if (prop?.PropertyType == typeof(bool)) {
+                                prop.SetValue(s, bool.Parse(cell));
+                            } else {
+                                prop?.SetValue(s, cell);
+                            }
+                        }
                         i++;
                     }
                     stages.Add(s);

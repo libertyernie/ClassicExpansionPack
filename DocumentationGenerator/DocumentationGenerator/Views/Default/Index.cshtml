@@ -4,7 +4,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Classic Expansion Pack 7.0s</title>
+    <title>Classic Expansion Pack 8.0s</title>
     <style type="text/css">
         h1, h2, h3, h4, h5, h6 {
             font-family: Helvetica, Arial, monospace;
@@ -22,54 +22,53 @@
             border-collapse: collapse;
         }
 
-            .stagetable td {
-                border: 2px solid black;
-            }
+        .stagetable td {
+            border: 2px solid black;
+        }
 
-            .stagetable.alternate {
-                margin-left: 74px;
-            }
+        .stagetable.alternate {
+            margin-left: 74px;
+        }
 
-            .stagetable .icon {
-                width: 68px;
-            }
+        .stagetable .icon {
+            width: 68px;
+        }
 
-            .stagetable .song {
-                font-style: italic;
-            }
+        .stagetable .song {
+            font-style: italic;
+        }
 
-            .stagetable .stagename {
-                font-family: Helvetica, Arial, monospace;
-                font-size: 32px;
-                font-weight: bold;
-                width: 400px;
-            }
+        .stagetable .stagename {
+            font-family: Helvetica, Arial, monospace;
+            font-size: 32px;
+            font-weight: bold;
+            width: 400px;
+        }
 
-            .stagetable .pacname {
-                font-family: monospace;
-                font-size: 12pt;
-                text-align: right;
-                width: 430px;
-            }
+        .stagetable .pacname {
+            font-family: monospace;
+            font-size: 12pt;
+            text-align: right;
+            width: 430px;
+        }
 
-            .stagetable .notes {
-                font-size: 10pt;
-                font-family: Helvetica, Arial, sans-serif;
-            }
+        .stagetable .notes {
+            font-size: 10pt;
+            font-family: Helvetica, Arial, sans-serif;
+        }
     </style>
 </head>
 <body>
     <h1 align="center">
-        Classic Expansion Pack 7.0s<br>
+        Classic Expansion Pack 8.0s<br>
         <small>for Super Smash Bros. Brawl</small>
     </h1>
     <p>
         This version of the Classic Expansion Pack is an add-on for Super
         Smash Bros. Brawl, containing 37 additional stages that can be
         used in multiplayer mode. The selection includes 35 stages from
-        Super Smash Bros. (Nintendo 64), Super Smash Bros. Melee
-        (GameCube) and Super Smash Bros. for Wii U, as well as the Online
-        Practice Stage and Midair Stadium from The Subspace Emissary.
+        other Super Smash Bros. games, as well as Brawl's Online
+        Practice Stage and separate versions of Castle Siege's 3 phases.
     </p>
     <p>
         These stages have been combined into a pack that adds them to the
@@ -134,7 +133,7 @@
     </p>
     <p>
         <b>
-            NOTE: Unlike previous versions, this pack comes with a
+            NOTE: Unlike pre-7.0s versions of the pack, this pack comes with a
             sc_selmap.pac instead of a common5.pac.
         </b> If you have your own
         common5.pac, replace the “sc_selmap_en” section in it with my
@@ -148,18 +147,13 @@
     <ul>
         <li>
             Any additional changes I made to the stages, as originally
-            posted on BrawlVault, are noted in bold/italic text.
+            posted on BrawlVault, are noted.
         </li>
         <li>
             All stages will be available on “random”, regardless of
             whether they are enabled on the Random Stage Select screen. You
             can turn this off by removing the Enable Random Expansion Stages
             code from Codeset.txt and making a new GCT file from it.
-        </li>
-        <li>
-            All of the stages and songs have been rearranged since Classic
-            Expansion Pack 6.1s. Additionally, stages present in Project M
-            have been updated, along with a few others.
         </li>
     </ul>
     <hr size="2" width="100%">
@@ -168,15 +162,10 @@
     </h2>
     <p>
         Dantarion's Alternate Stage Loader code is enabled for every
-        stage in this pack, loading [NAME]_L.pac instead of [NAME].pac
-        when you hold L+A (or B+2 on a Wii Remote) while loading the
-        stage. For Battlefield and Final Destination, an additional stage
-        is made available by holding R+A.<br>
-    </p>
-    <p>
-        The following stages are included as alternates to stages
-        included with Brawl. All of them use the same module file as the
-        original stage.
+        STGCUSTOM## stage in this pack, loading [NAME]_L.pac instead of [NAME].pac
+        when you hold L (or B on a Wii Remote) while loading the
+        stage. For some Brawl stages, one or more alternate versions
+        are also available.<br>
     </p>
     <p>
         Also note that the second song on Battlefield – T02.brstm,
@@ -192,7 +181,7 @@
                 <tr>
                     @if (stage.PngIcon != null) {
                         <td rowspan="2" class="icon" valign="top">
-                                <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
+                            <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
                         </td>
                     }
                     <td class="game" valign="top" colspan="@(stage.Alternate ? 2 : 1)">
@@ -221,14 +210,18 @@
                 </tr>
                 <tr>
                     <td class="notes" colspan="@(stage.Alternate ? 2 : 3)" valign="top">
-                        <a href="@(stage.BrawlVaultLink ?? stage.DirectLink)">
-                            @(stage.BrawlVaultLink ?? stage.DirectLink)
-                        </a><br />
-                        @if (stage.Author != null) {
+                        @if (stage.Link.StartsWith("http")) {
+                            <a href="@stage.Link">@stage.Link</a><br />
+                        } else {
+                            <b>@stage.Link</b><br />
+                        }
+                        @if (stage.Imported) {
+                            @:Imported from SSB4 by: @stage.Author<br />
+                        } else if (stage.Author != null) {
                             @:Author(s): @stage.Author<br />
                         }
-                        @if (stage.MyChanges != null) {
-                            <b><i>@stage.MyChanges</i></b>
+                        @if (stage.Notes != null) {
+                            <b><i>@stage.Notes</i></b>
                         }
                     </td>
                 </tr>
