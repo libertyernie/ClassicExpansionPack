@@ -27,11 +27,18 @@
         }
 
         .stagetable.alternate {
-            margin-left: 74px;
+            margin-left: 36px;
         }
 
         .stagetable .icon {
             width: 68px;
+        }
+
+        .stagetable.alternate .icon {
+            font-size: 10pt;
+            font-family: Helvetica, Arial, sans-serif;
+            width: 32px;
+            text-align: center;
         }
 
         .stagetable .song {
@@ -39,7 +46,7 @@
         }
 
         .stagetable .stagename {
-            font-family: Helvetica, Arial, monospace;
+            font-family: Helvetica, Arial, sans-serif;
             font-size: 32px;
             font-weight: bold;
             width: 400px;
@@ -176,12 +183,29 @@
         BrawlManagerLib.Song song;
     }
     @foreach (var stage in Model.Stages) {
+        int lastUnderscore = stage.Filename.LastIndexOf('_');
         <table class="stagetable @(stage.Alternate ? "alternate" : "")" border="1" cellpadding="2" cellspacing="2">
             <tbody>
                 <tr>
                     @if (stage.PngIcon != null) {
                         <td rowspan="2" class="icon" valign="top">
                             <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
+                        </td>
+                    } else {
+                        <td rowspan="2" class="icon" valign="middle">
+                            @if (lastUnderscore > 0) {
+                                switch (stage.Filename[lastUnderscore + 1]) {
+                                    case 'L':
+                                        <span class="altkey">+L</span>
+                                        break;
+                                    case 'R':
+                                        <span class="altkey">+R</span>
+                                        break;
+                                    case 'Z':
+                                        <span class="altkey">+Z or +ZR</span>
+                                        break;
+                                }
+                            }
                         </td>
                     }
                     <td class="game" valign="top" colspan="@(stage.Alternate ? 2 : 1)">
@@ -191,7 +215,7 @@
                         <td class="song" valign="top">
                             @if (Model.Sdsl.TryGetSong(stage.Stage.ID, out song)) {
                                 @song.Filename
-                            } else if (stage.Stage.ID == 0x37) {
+                                } else if (stage.Stage.ID == 0x37) {
                                 @:X07
                             }
                             @stage.SongName
@@ -209,7 +233,7 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="notes" colspan="@(stage.Alternate ? 2 : 3)" valign="top">
+                    <td class="notes" colspan="3" valign="top">
                         @if (stage.Link.StartsWith("http")) {
                             <a href="@stage.Link">@stage.Link</a><br />
                         } else {

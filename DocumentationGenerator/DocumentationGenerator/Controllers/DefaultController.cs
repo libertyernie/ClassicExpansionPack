@@ -197,11 +197,13 @@ namespace DocumentationGenerator.Controllers
 
             string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\SD\private\wii\app\RSBE\pf\module";
             foreach (CEPStage s in stages) {
-                string relname = StageIDMap.RelNameForPac(s.Filename, true);
-                using (var stream = new FileStream(Path.Combine(relpath, relname), FileMode.Open, FileAccess.Read)) {
-                    stream.Seek(3, SeekOrigin.Begin);
-                    s.ModuleBase = RelNames[stream.ReadByte()];
-                }
+                try {
+                    string relname = StageIDMap.RelNameForPac(s.Filename, true);
+                    using (var stream = new FileStream(Path.Combine(relpath, relname), FileMode.Open, FileAccess.Read)) {
+                        stream.Seek(3, SeekOrigin.Begin);
+                        s.ModuleBase = RelNames[stream.ReadByte()];
+                    }
+                } catch (FileNotFoundException) { }
 
                 if (s.Alternate) continue;
                 int iconId = sss.IconForStage(s.Stage.ID);
@@ -214,8 +216,9 @@ namespace DocumentationGenerator.Controllers
                 }
             }
 
+            var expStages = stages.Where(s => s.Filename.Contains("CUSTOM") || s.Filename.Contains("ONLINETRAINING"));
             return View(new MainModel {
-                Stages = stages,
+                Stages = stages.Except(expStages).Concat(expStages).ToList(),
                 Sdsl = new StageDependentSongLoader(gct)
             });
         }
