@@ -89,10 +89,10 @@
         tool.<br>
     </p>
     <p>
-        This pack contains several Wii music files (.brstm), which
-        replace certain obscure tracks (mostly from The Subspace Emissary)
-        and are reassigned through the use of codes to play on several of
-        the added stages.<br>
+        This pack contains several Wii music files (.brstm), which are
+		added to the game using the Custom Sound Engine code. Song titles
+		for these songs may not appear if you're using Gecko, but they
+		should show up with Riivolution.
     </p>
     <hr size="2" width="100%">
     <p>
@@ -112,6 +112,8 @@
     </ul>
     <p>
         Instructions:<br>
+		(If you have homebrew installed, you can just launch either Gecko
+		OS or Riivolution from there.)
     </p>
     <ul>
         <li>
@@ -146,6 +148,9 @@
         common5.pac, replace the “sc_selmap_en” section in it with my
         sc_selmap.pac file. (After doing this, sc_selmap.pac does not need
         to be on the SD card.)<br>
+		Riivolution users will still need to use common5; the ocarina.xml file
+		loads one from the /riivolution folder, although you can move it to
+		private/wii/app/RSBE/pf/system if you like.
     </p>
     <hr size="2" width="100%">
     <p>
@@ -165,7 +170,7 @@
     </ul>
     <hr size="2" width="100%">
     <p>
-        Dantarion's Alternate Stage Loader code is enabled for every
+        The Alternate Stage/Rel Loader (ASRL) code is enabled for every
         STGCUSTOM## stage in this pack, loading [NAME]_L.pac instead of [NAME].pac
         when you hold L (or B on a Wii Remote) while loading the
         stage. For some Brawl stages, one or more alternate versions
@@ -176,6 +181,12 @@
         originally <i>Menu (Super Smash Bros. Melee)</i> – has been
         replaced with <i>Fighting Polygon Team (Super Smash Bros.)</i><br>
     </p>
+	<hr>
+	<p>
+		For each stage below, the creator of the stage is noted. Let me know
+		on KC:MM if I've forgot to mention anyone. Creators of the codes used
+		in the codeset are credited in Codeset.txt.
+	</p>
     @{ 
         BrawlManagerLib.Song song;
     }
@@ -250,5 +261,15 @@
         </table>
         <br />
     }
+	<p>
+		Special thanks:
+		<ul>
+			<li>Mewtwo2000 for creating many SSB64 and Melee stages</li>
+			<li>DSX8, Edwguard Flows, and CaliburZx for SSB4 stages</li>
+			<li>Dantarion for the Alternate Stage Loader and Custom Sound Engine</li>
+			<li>PyotrLuzhin for updated versions of said codes</li>
+			<li>Phanton Wings for the File Patch Code and Stage Roster Expansion System</li>
+		</ul>
+	</p>
 </body>
 </html>
