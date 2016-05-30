@@ -184,7 +184,7 @@
 		<file external="/private/wii/app/RSBE/pf/menu/strap/StrapEn.pac" disc="/menu/strap/StrapEn.pac"/>
 		<file external="/private/wii/app/RSBE/pf/sound/strm/X07.brstm" disc="/sound/strm/X07.brstm"/>
 		<!-- Stages -->
-		<file external="/riivolution/omega/STGBATTLEFIELD.pac" disc="/stage/melee/STGBATTLEFIELD.pac" />
+		<file external="/private/wii/app/RSBE/pf/stage/melee/STGBATTLEFIELD_X.pac" disc="/stage/melee/STGBATTLEFIELD.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGFINAL_Z.pac" disc="/stage/melee/STGFINAL.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM02_L.pac" disc="/stage/melee/STGCUSTOM02.pac" create="true" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM03_L.pac" disc="/stage/melee/STGCUSTOM03.pac" create="true" />
@@ -205,6 +205,7 @@
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXYORSTER_L.pac" disc="/stage/melee/STGDXYORSTER.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXZEBES_L.pac" disc="/stage/melee/STGDXZEBES.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGKART_L.pac" disc="/stage/melee/STGKART.pac" />
+		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMADEIN_R.pac" disc="/stage/melee/STGMADEIN_en.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMANSION_L.pac" disc="/stage/melee/STGMANSION.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGOLDIN_L.pac" disc="/stage/melee/STGOLDIN.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGONLINETRAINING_L.pac" disc="/stage/melee/STGONLINETRAINING.pac" />
@@ -233,6 +234,7 @@
 		<file external="/private/wii/app/RSBE/pf/module/st_dxyorster_L.rel" disc="/module/st_dxyorster.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_dxzebes_L.rel" disc="/module/st_dxzebes.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_kart_L.rel" disc="/module/st_kart.rel" />
+		<file external="/private/wii/app/RSBE/pf/module/st_madein_R.rel" disc="/module/st_madein.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_mansion_L.rel" disc="/module/st_mansion.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_oldin_L.rel" disc="/module/st_oldin.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_otrain_L.rel" disc="/module/st_otrain.rel" />
