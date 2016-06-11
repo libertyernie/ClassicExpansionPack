@@ -3,9 +3,6 @@ STGCUSTOM01,Super Smash Bros. Brawl,Castle Siege (Static 1),Fire Emblem Theme,li
 STGCUSTOM01_L,Super Smash Bros. Brawl,Castle Siege (Static 2),,libertyernie,02/19/14,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=35948,http://www.mediafire.com/download/dg1mwr2i5djap6m/Castle%20Siege%20Individual%20Stages.zip,,
 STGCUSTOM01_R,Super Smash Bros. Brawl,Castle Siege (Static 3),,libertyernie,02/19/14,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=35948,http://www.mediafire.com/download/dg1mwr2i5djap6m/Castle%20Siege%20Individual%20Stages.zip,,
 STGCUSTOM01_Z,Super Smash Bros. for Wii U,Castle Siege Ω,,Edwguard Flows,02/07/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=210826,https://www.dropbox.com/s/hhgpsxu1kpv5pir/Castle%20Siege%20Omega.rar?dl=0,TRUE,Ported to STGFINAL (originally over STGEMBLEM)
-STGONLINETRAINING_L,Super Smash Bros. for Wii U,Online Practice Stage,,DSX8,04/01/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=211345,https://mega.nz/#!xx8BnBxI!FM57gBypVN-KGr7ndtpVLX07tTMIwEb6CJ1SHY_0onA,TRUE,
-STGONLINETRAINING_R,Super Smash Bros. for 3DS,Online Practice Stage,,DSX8,04/01/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=211345,https://mega.nz/#!xx8BnBxI!FM57gBypVN-KGr7ndtpVLX07tTMIwEb6CJ1SHY_0onA,TRUE,
-STGONLINETRAINING_Z,Super Smash Bros. Brawl,Online Practice Stage,,,09/26/14,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=7153,http://www.mediafire.com/download.php?muzuui012vm,,Edited to work on st_final by Mewtwo2000 – no sandbag
 STGCUSTOM02,Super Smash Bros. for Wii U,Mario Galaxy,Egg Planet (Remix),DSX8,05/11/15,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=208029,https://onedrive.live.com/download.aspx?cid=2E29852C568B1E25&resid=2e29852c568b1e25%211403&canary=P4oGdVKovi3%2Bv9rScs3w33AAsSBT4b5XquRYXTgdEBE%3D4,TRUE,
 STGCUSTOM02_L,Super Smash Bros. for Wii U,Mario Galaxy Ω,,DSX8,05/11/15,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=208029,https://onedrive.live.com/download.aspx?cid=2E29852C568B1E25&resid=2e29852c568b1e25%211403&canary=P4oGdVKovi3%2Bv9rScs3w33AAsSBT4b5XquRYXTgdEBE%3D4,TRUE,
 STGCUSTOM03,Super Smash Bros. for Wii U,Jungle Hijinx,Gear Getaway,"DSX8, jaystring",04/16/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=208684,https://mega.nz/#!U4dG3bBY!iK6Myf8PwM64UATHbh65oxt9Q-TgIdKWFx5VEixss3I,TRUE,
@@ -62,6 +59,14 @@ STGCUSTOM23,Super Smash Bros. for Wii U,Midgar,Let the Battles Begin!,"DSX8, jay
 STGCUSTOM23_L,Super Smash Bros. for Wii U,Midgar Ω,,"DSX8, jaystring, Edwguard Flows",04/16/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=210367,https://mega.nz/#!NgdjiJCT!jXy22V_LSS9CHfUShPxTKz_iWoEWLqWfRHfCa1twXvU,TRUE,
 STGCUSTOM24,Super Smash Bros. for Wii U,Miiverse,Mii Plaza,DSX8,07/27/15,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=209180,https://www.dropbox.com/s/nvg995qvnunpb0w/Miiverse%20%28SmashU%29.rar?dl=0,TRUE,
 STGCUSTOM24_L,Super Smash Bros. for Wii U,Miiverse Ω,,DSX8,07/27/15,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=209180,https://www.dropbox.com/s/nvg995qvnunpb0w/Miiverse%20%28SmashU%29.rar?dl=0,TRUE,Collisions fixed
+STGCUSTOM25,Super Smash Bros. Brawl,Online Practice Stage,Online Practice Stage,,,,,,
+STGCUSTOM25_L,Super Smash Bros. for Wii U,Online Practice Stage,,DSX8,04/01/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=211345,https://mega.nz/#!xx8BnBxI!FM57gBypVN-KGr7ndtpVLX07tTMIwEb6CJ1SHY_0onA,TRUE,
+STGCUSTOM25_R,Super Smash Bros. for 3DS,Online Practice Stage,,DSX8,04/01/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=211345,https://mega.nz/#!xx8BnBxI!FM57gBypVN-KGr7ndtpVLX07tTMIwEb6CJ1SHY_0onA,TRUE,
+STGCUSTOM25_Z,Super Smash Bros. Brawl,Online Practice Stage,,,09/26/14,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=7153,http://www.mediafire.com/download.php?muzuui012vm,,Edited to work on st_final by Mewtwo2000 – no sandbag
+STGCUSTOM26,Super Smash Bros. Brawl,Target Smash!! 1,Target Smash!!,,,,,,
+STGCUSTOM26_L,Super Smash Bros. Brawl,Target Smash!! 2,Target Smash!!,,,,,,
+STGCUSTOM26_R,Super Smash Bros. Brawl,Target Smash!! 4,Target Smash!!,,,,,,
+STGCUSTOM26_Z,Super Smash Bros. Brawl,Target Smash!! 5,Target Smash!!,,,,,,
 STGBATTLEFIELD_L,Super Smash Bros. Melee,Battlefield,,"Oshtoby, Mewtwo2000",,From Project M 3.6,,,
 STGBATTLEFIELD_R,Super Smash Bros.,Battlefield,,Mewtwo2000,09/26/14,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=4796 ,http://www.mediafire.com/download.php?tg34nytky4o,,
 STGBATTLEFIELD_Z,Super Smash Bros. for Wii U,Battlefield,,"Edwguard Flows, DSX8",05/03/16,http://forums.kc-mm.com/Gallery/BrawlView.php?Number=211673,https://www.dropbox.com/s/grc0ubtwuj4gj7v/Edwguard%20Flows%20%26%20DSX8%20-%20Battlefield%20%28Smash%20U%29.rar?dl=0,TRUE,

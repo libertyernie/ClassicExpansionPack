@@ -244,23 +244,25 @@
                         @stage.Filename
                     </td>
                 </tr>
-                <tr>
-                    <td class="notes" colspan="3" valign="top">
-                        @if (stage.Link.StartsWith("http")) {
-                            <a href="@stage.Link">@stage.Link</a><br />
-                        } else {
-                            <b>@stage.Link</b><br />
-                        }
-                        @if (stage.Imported) {
-                            @:Imported from SSB4 by: @stage.Author<br />
-                        } else if (stage.Author != null) {
-                            @:Author(s): @stage.Author<br />
-                        }
-                        @if (stage.Notes != null) {
-                            <b><i>@stage.Notes</i></b>
-                        }
-                    </td>
-                </tr>
+                @if (stage.Link != null || stage.Imported || stage.Author != null || stage.Notes != null) {
+                    <tr>
+                        <td class="notes" colspan="3" valign="top">
+                            @if (stage.Link?.StartsWith("http") == true) {
+                                <a href="@stage.Link">@stage.Link</a><br />
+                            } else {
+                                <b>@stage.Link</b><br />
+                            }
+                            @if (stage.Imported) {
+                                @:Imported from SSB4 by: @stage.Author<br />
+                            } else if (stage.Author != null) {
+                                @:Author(s): @stage.Author<br />
+                            }
+                            @if (stage.Notes != null) {
+                                <b><i>@stage.Notes</i></b>
+                            }
+                        </td>
+                    </tr>
+                }
             </tbody>
         </table>
         <br />
