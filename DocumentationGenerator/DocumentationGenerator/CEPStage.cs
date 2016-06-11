@@ -25,11 +25,15 @@ namespace DocumentationGenerator {
 
         public string Name { get; set; }
 
-        public string SongName { get; set; }
-
         public string Author { get; set; }
 
-        public string BrawlVaultLink { get; set; }
+		public string SongFilename { get; set; }
+
+		public string SongTitle { get; set; }
+
+		public string SongName { get; set; }
+
+		public string BrawlVaultLink { get; set; }
 
         public string DirectLink { get; set; }
 

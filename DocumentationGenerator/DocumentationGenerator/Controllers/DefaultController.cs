@@ -194,8 +194,8 @@ namespace DocumentationGenerator.Controllers
             var sss = new BrawlManagerLib.CustomSSSCodeset(gct);
 
             ResourceNode sc_selmap = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\menu2\sc_selmap.pac");
-
-            string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\module";
+			
+			string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\module";
             foreach (CEPStage s in stages) {
                 try {
                     string relname = StageIDMap.RelNameForPac(s.Filename, true);
@@ -215,11 +215,52 @@ namespace DocumentationGenerator.Controllers
                     }
                 }
             }
+			
+			ResourceNode info_pac = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\info2\info.pac");
+			MSBinNode info = (MSBinNode)info_pac.FindChild("MiscData[140]", true);
+			ResourceNode common2 = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\system\common2.pac");
+			var common2_titledata = new List<SongNameBar.SongIndexEntry>(0);
+			foreach (ResourceNode child in common2.Children) {
+				if (child is Common2MiscDataNode) {
+					SndBgmTitleDataNode sndBgmTitleData = child.Children.FirstOrDefault() as SndBgmTitleDataNode;
+					if (sndBgmTitleData != null) {
+						common2_titledata = sndBgmTitleData.Children.Select(n => new SongNameBar.SongIndexEntry() {
+							ID = (ushort)((SndBgmTitleEntryNode)n).ID,
+							Index = ((SndBgmTitleEntryNode)n).SongTitleIndex
+						}).ToList();
+						break;
+					}
+				}
+			}
 
-            var expStages = stages.Where(s => s.Filename.Contains("CUSTOM") || s.Filename.Contains("ONLINETRAINING"));
-            return View(new MainModel {
-                Stages = stages.Except(expStages).Concat(expStages).ToList(),
-                Sdsl = new StageDependentSongLoader(gct)
+			List<string> brstms = Directory.EnumerateFiles(@"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\sound\strm")
+				.Select(s => Path.GetFileNameWithoutExtension(s)).ToList();
+
+			var sdsl = new StageDependentSongLoader(gct);
+			foreach (CEPStage stage in stages) {
+				Song song;
+				if (sdsl.TryGetSong(stage.Stage.ID, out song)) {
+					stage.SongFilename = song.Filename;
+					stage.SongTitle = info._strings[common2_titledata.Where(c => c.ID == song.ID).Select(c => c.Index).First()];
+					//brstms.RemoveAll(s => s == song.Filename);
+				}
+			}
+
+			var expStages = stages.Where(s => s.Filename.Contains("CUSTOM"));
+			return View(new MainModel {
+				Stages = stages.Except(expStages).Concat(expStages).ToList(),
+				Songs = brstms.Select(b => {
+					var song = SongIDMap.Songs.SingleOrDefault(s => s.Filename == b);
+					return new CEPSong {
+						SongFilename = b,
+						SongTitle = info._strings[(
+							from c in common2_titledata
+							where c.ID == song.ID
+							select c.Index
+						).SingleOrDefault()],
+						OriginalSongTitle = b.StartsWith("0000") ? null : song.DefaultName
+					};
+				})
             });
         }
     }

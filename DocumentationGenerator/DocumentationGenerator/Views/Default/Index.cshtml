@@ -188,9 +188,6 @@
 		on KC:MM if I've forgot to mention anyone. Creators of the codes used
 		in the codeset are credited in Codeset.txt.
 	</p>
-    @{ 
-        BrawlManagerLib.Song song;
-    }
     @foreach (var stage in Model.Stages) {
         int lastUnderscore = stage.Filename.LastIndexOf('_');
         <table class="stagetable @(stage.Alternate ? "alternate" : "")" border="1" cellpadding="2" cellspacing="2">
@@ -225,12 +222,7 @@
                     </td>
                     @if (!stage.Alternate) {
                         <td class="song" valign="top">
-                            @if (Model.Sdsl.TryGetSong(stage.Stage.ID, out song)) {
-                                @song.Filename
-                                } else if (stage.Stage.ID == 0x37) {
-                                @:X07
-                            }
-                            @stage.SongName
+@stage.SongFilename                            @stage.SongTitle
                         </td>
                     }
                 </tr>
@@ -267,6 +259,23 @@
         </table>
         <br />
     }
+    <hr />
+    <p>Full song replacement list:</p>
+    <table>
+        <tr>
+            <th>Filename</th>
+            <th>Title</th>
+            <th>Replaces</th>
+        </tr>
+            @foreach (var s in Model.Songs) {
+                <tr>
+                    <td>@s.SongFilename</td>
+                    <td>@s.SongTitle</td>
+                    <td>@s.OriginalSongTitle</td>
+                </tr>
+            }
+    </table>
+    <hr />
 	<p>
 		Special thanks:
 		<ul>
