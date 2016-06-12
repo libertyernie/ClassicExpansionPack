@@ -208,12 +208,14 @@ namespace DocumentationGenerator.Controllers
                 if (s.Alternate) continue;
                 int iconId = sss.IconForStage(s.Stage.ID);
                 TextureContainer tc = new TextureContainer(sc_selmap, iconId);
-                using (MemoryStream ms = new MemoryStream()) {
-                    using (Bitmap b = tc.icon_tex0.GetImage(0)) {
-                        b.Save(ms, ImageFormat.Png);
-                        s.PngIcon = ms.ToArray();
-                    }
-                }
+				if (tc.icon_tex0 != null) {
+					using (MemoryStream ms = new MemoryStream()) {
+						using (Bitmap b = tc.icon_tex0.GetImage(0)) {
+							b.Save(ms, ImageFormat.Png);
+							s.PngIcon = ms.ToArray();
+						}
+					}
+				}
             }
 			
 			ResourceNode info_pac = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\info2\info.pac");
