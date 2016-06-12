@@ -68,14 +68,13 @@
 <body>
     <h1 align="center">
         Classic Expansion Pack 8.0s<br>
-        <small>for Super Smash Bros. Brawl</small>
+        <small>for Super Smash Bros. Brawl &ndash; ASRL included</small>
     </h1>
     <p>
         This version of the Classic Expansion Pack is an add-on for Super
         Smash Bros. Brawl, containing 37 additional stages that can be
         used in multiplayer mode. The selection includes 35 stages from
-        other Super Smash Bros. games, as well as Brawl's Online
-        Practice Stage and separate versions of Castle Siege's 3 phases.
+        other Super Smash Bros. games.
     </p>
     <p>
         These stages have been combined into a pack that adds them to the
@@ -154,9 +153,7 @@
 		private/wii/app/RSBE/pf/system if you like.
     </p>
     <hr size="2" width="100%">
-    <p>
-        Other notes:<br>
-    </p>
+    <h3>Notes</h3>
     <ul>
         <li>
             Any additional changes I made to the stages, as originally
@@ -168,19 +165,111 @@
             can turn this off by removing the Enable Random Expansion Stages
             code from Codeset.txt and making a new GCT file from it.
         </li>
+        <li>
+            Stages with alternate versions are denoted on the stage select
+            screen to the lower-left of the stage name, using the letters
+            on the buttons to hold.
+            <ul>
+                <li>
+                    For example, the text under Battlefield reads "LRZ/X→Ω",
+                    meaning that Battlefield has alternate versions when
+                    holding L, R, Z, or X, and that the X alternate is an
+                    omega stage.
+                </li>
+                <li>
+                    Some of the Omega stages are from ALM5252's Project M
+                    Omega Build, and are not necessarily based on Omega stages
+                    from the newer Super Smash Bros. games. These stages will
+                    be noted on the Stage Select screen with a lowercase omega
+                    (ω) and below by listing ALM5252’s Omega Build as the source.
+                </li>
+            </ul>
+        </li>
     </ul>
     <hr size="2" width="100%">
+    <h3>Technical Notes</h3>
     <p>
-        The Alternate Stage/Rel Loader (ASRL) code is enabled for every
-        STGCUSTOM## stage in this pack, loading [NAME]_L.pac instead of [NAME].pac
-        when you hold L (or B on a Wii Remote) while loading the
-        stage. For some Brawl stages, one or more alternate versions
-        are also available.<br>
+        The Alternate Stage/Rel Loader (ASRL) code is enabled for every stage
+        in this pack (except Flat Zone 2 and Summit), loading certain alternate
+        .pac and .rel files for each stage when a certain button is held:
     </p>
+    <table>
+        <tr>
+            <th>Button</th>
+            <th>.pac</th>
+            <th>.rel</th>
+        </tr>
+        <tr>
+            <td>None</td>
+            <td>STG***.pac</td>
+            <td>st_***.rel</td>
+        </tr>
+        <tr>
+            <td>L (Wiimote B)</td>
+            <td>STG***_L.pac</td>
+            <td>st_***_L.rel</td>
+        </tr>
+        <tr>
+            <td>R</td>
+            <td>STG***_R.pac</td>
+            <td>st_***_R.rel</td>
+        </tr>
+        <tr>
+            <td>Z or ZR</td>
+            <td>STG***_Z.pac</td>
+            <td>st_***_Z.rel</td>
+        </tr>
+        <tr>
+            <td>X (Battlefield only)</td>
+            <td>STG***_X.pac</td>
+            <td>st_***_X.rel</td>
+        </tr>
+    </table>
     <p>
-        Also note that the second song on Battlefield – T02.brstm,
-        originally <i>Menu (Super Smash Bros. Melee)</i> – has been
-        replaced with <i>Fighting Polygon Team (Super Smash Bros.)</i><br>
+        There is no technical reason that STGCUSTOM01 is skipped; this is
+        due to the changes I've made in this pack over the course of
+        development. A few STGCUSTOM icons are not in order. The table
+        below lists STGCUSTOMs in stage select screen order:
+    </p>
+    <table>
+        <tr>
+            <th>Stage</th>
+            <th>Icon</th>
+        </tr>
+        <tr>
+            <td>Lylat Cruise (STGCUSTOM27)</td>
+            <td>15 (same icon as original Lylat Cruise)</td>
+        </tr>
+        <tr>
+            <td>Castle Siege (STGCUSTOM28)</td>
+            <td>21 (same icon as original Castle Siege)</td>
+        </tr>
+        <tr>
+            <td>Online Practice Stage (STGCUSTOM25)</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            <td>Target Smash!! (STGCUSTOM26)</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>STGCUSTOM01 (unused)</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td>STGCUSTOM02 through STGCUSTOM12</td>
+            <td>33-49</td>
+        </tr>
+        <tr>
+            <td>STGCUSTOM13 through STGCUSTOM34</td>
+            <td>61-78</td>
+        </tr>
+    </table>
+    <p>
+        The standard versions of Lylat Cruise and Castle Siege are replaced
+        with static versions (denoted on the SSS with "St.") because the
+        originals cause the ASRL code to stop working properly until Brawl
+        is closed.
     </p>
 	<hr>
 	<p>
@@ -281,6 +370,7 @@
 		<ul>
 			<li>Mewtwo2000 for creating many SSB64 and Melee stages</li>
 			<li>DSX8, Edwguard Flows, and CaliburZx for SSB4 stages</li>
+            <li>ALM5252 for several omega stages</li>
 			<li>Dantarion for the Alternate Stage Loader and Custom Sound Engine</li>
 			<li>PyotrLuzhin for updated versions of said codes</li>
 			<li>Phanton Wings for the File Patch Code and Stage Roster Expansion System</li>
