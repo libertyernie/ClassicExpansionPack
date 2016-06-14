@@ -214,6 +214,9 @@
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM22_L.pac" disc="/stage/melee/STGCUSTOM22.pac" create="true" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM23_L.pac" disc="/stage/melee/STGCUSTOM23.pac" create="true" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM24_L.pac" disc="/stage/melee/STGCUSTOM24.pac" create="true" />
+		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM25_Z.pac" disc="/stage/melee/STGCUSTOM25.pac" create="true" />
+		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM27_R.pac" disc="/stage/melee/STGCUSTOM27.pac" create="true" />
+		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM28_Z.pac" disc="/stage/melee/STGCUSTOM28.pac" create="true" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCRAYON_L.pac" disc="/stage/melee/STGCRAYON.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDOLPIC_L.pac" disc="/stage/melee/STGDOLPIC.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDONKEY_L.pac" disc="/stage/melee/STGDONKEY.pac" />
@@ -257,6 +260,9 @@
 		<file external="/private/wii/app/RSBE/pf/module/st_custom22_L.rel" disc="/module/st_custom22.rel" create="true" />
 		<file external="/private/wii/app/RSBE/pf/module/st_custom23_L.rel" disc="/module/st_custom23.rel" create="true" />
 		<file external="/private/wii/app/RSBE/pf/module/st_custom24_L.rel" disc="/module/st_custom24.rel" create="true" />
+		<file external="/private/wii/app/RSBE/pf/module/st_custom25_Z.rel" disc="/module/st_custom25.rel" create="true" />
+		<file external="/private/wii/app/RSBE/pf/module/st_custom27_R.rel" disc="/module/st_custom27.rel" create="true" />
+		<file external="/private/wii/app/RSBE/pf/module/st_custom28_Z.rel" disc="/module/st_custom28.rel" create="true" />
 		<file external="/private/wii/app/RSBE/pf/module/st_crayon_L.rel" disc="/module/st_crayon.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_dolpic_L.rel" disc="/module/st_dolpic.rel" />
 		<file external="/private/wii/app/RSBE/pf/module/st_donkey_L.rel" disc="/module/st_donkey.rel" />
