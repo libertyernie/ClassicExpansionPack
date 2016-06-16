@@ -3,13 +3,7 @@
 <options>
 	<section name="Smash Bros. Brawl">
 		<option name="Classic Expansion Pack" default="1">
-			<choice name="Enabled (ASL on)">
-				<patch id="standard-files" />
-				<patch id="asl-codeset" />
-				<patch id="ocarina-common" />
-				<patch id="music" />
-			</choice>
-			<choice name="Enabled (ASL off)">
+			<choice name="Enabled">
 				<patch id="standard-files" />
 				<patch id="noasl-codeset" />
 				<patch id="ocarina-common" />
@@ -182,10 +176,6 @@
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM26.pac" disc="/stage/melee/STGCUSTOM26.pac" create="true"/>
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM27.pac" disc="/stage/melee/STGCUSTOM27.pac" create="true"/>
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM28.pac" disc="/stage/melee/STGCUSTOM28.pac" create="true"/>
-	</patch>
-	<patch id="asl-codeset">
-		<file external="/riivolution/common5.pac" disc="/system/common5_en.pac"/>
-		<memory valuefile="/codes/RSBE01.gct" offset="0x00570000" />
 	</patch>
 	<patch id="noasl-codeset">
 		<file external="/riivolution/noasl/common5.pac" disc="/system/common5_en.pac"/>
