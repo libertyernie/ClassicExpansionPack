@@ -68,13 +68,12 @@
 <body>
     <h1 align="center">
         Classic Expansion Pack 8.0s<br>
-        <small>for Super Smash Bros. Brawl &ndash; ASRL included</small>
+        <small>for Super Smash Bros. Brawl</small>
     </h1>
     <p>
         This version of the Classic Expansion Pack is an add-on for Super
         Smash Bros. Brawl, containing 37 additional stages that can be
-        used in multiplayer mode. The selection includes 35 stages from
-        other Super Smash Bros. games.
+        used in multiplayer mode.
     </p>
     <p>
         These stages have been combined into a pack that adds them to the
@@ -124,7 +123,7 @@
 			users should copy the “riivolution” folder too.) If you're
             asked to merge a folder, choose yes. If you're asked to
             overwrite a file, choose yes for that too. (If you have custom
-            portraits or stage icons in common5.pac, you should back that up
+            portraits or stage icons in sc_selmap.pac, you should back that up
             first.)
         </li>
         <li>
@@ -162,26 +161,6 @@
             can turn this off by removing the Enable Random Expansion Stages
             code from Codeset.txt and making a new GCT file from it.
         </li>
-        <li>
-            Stages with alternate versions are denoted on the stage select
-            screen to the lower-left of the stage name, using the letters
-            on the buttons to hold.
-            <ul>
-                <li>
-                    For example, the text under Battlefield reads "LRZ/X→Ω",
-                    meaning that Battlefield has alternate versions when
-                    holding L, R, Z, or X, and that the X alternate is an
-                    omega stage.
-                </li>
-                <li>
-                    Some of the Omega stages are from ALM5252's Project M
-                    Omega Build, and are not necessarily based on Omega stages
-                    from the newer Super Smash Bros. games. These stages will
-                    be noted on the Stage Select screen with a lowercase omega
-                    (ω) and below by listing ALM5252’s Omega Build as the source.
-                </li>
-            </ul>
-        </li>
     </ul>
     <hr size="2" width="100%">
     <h3>Riivolution Notes</h3>
@@ -190,55 +169,8 @@
         be used. The ocarina.xml file loads one from the /riivolution folder,
         although you can move it to private/wii/app/RSBE/pf/system if you like.
     </p>
-    <p>
-        Since the ASRL code cannot use the SD card while Riivolution is using
-        it, Riivolution users will not be able to use alternate stages. However,
-        you will be given the option of "Omega Stages Only" in addition to the
-        standard "Enabled" option in the Riivolution menu.
-    </p>
-    <p>
-        In "Enabled" mode, Riivolution will use the standard versions of Lylat
-        Cruise and Castle Siege, not the STGCUSTOM static versions listed below.
-    </p>
     <hr size="2" width="100%">
     <h3>Technical Notes</h3>
-    <p>
-        The Alternate Stage/Rel Loader (ASRL) code is enabled for every stage
-        in this pack (except Flat Zone 2 and Summit), loading certain alternate
-        .pac and .rel files for each stage when a certain button is held:
-    </p>
-    <table>
-        <tr>
-            <th>Button</th>
-            <th>.pac</th>
-            <th>.rel</th>
-        </tr>
-        <tr>
-            <td>None</td>
-            <td>STG***.pac</td>
-            <td>st_***.rel</td>
-        </tr>
-        <tr>
-            <td>L (Wiimote B)</td>
-            <td>STG***_L.pac</td>
-            <td>st_***_L.rel</td>
-        </tr>
-        <tr>
-            <td>R</td>
-            <td>STG***_R.pac</td>
-            <td>st_***_R.rel</td>
-        </tr>
-        <tr>
-            <td>Z or ZR</td>
-            <td>STG***_Z.pac</td>
-            <td>st_***_Z.rel</td>
-        </tr>
-        <tr>
-            <td>X (Battlefield only)</td>
-            <td>STG***_X.pac</td>
-            <td>st_***_X.rel</td>
-        </tr>
-    </table>
     <p>
         There is no technical reason that STGCUSTOM01 is skipped; this is
         due to the changes I've made in this pack over the course of
@@ -249,14 +181,6 @@
         <tr>
             <th>Stage</th>
             <th>Icon</th>
-        </tr>
-        <tr>
-            <td>Lylat Cruise (STGCUSTOM27)</td>
-            <td>15 (same icon as original Lylat Cruise)</td>
-        </tr>
-        <tr>
-            <td>Castle Siege (STGCUSTOM28)</td>
-            <td>21 (same icon as original Castle Siege)</td>
         </tr>
         <tr>
             <td>Online Practice Stage (STGCUSTOM25)</td>
@@ -279,12 +203,6 @@
             <td>61-78</td>
         </tr>
     </table>
-    <p>
-        The standard versions of Lylat Cruise and Castle Siege are replaced
-        with static versions (denoted on the SSS with "St.") because the
-        originals cause the ASRL code to stop working properly until Brawl
-        is closed.
-    </p>
 	<hr>
 	<p>
 		For each stage below, the creator of the stage is noted. Let me know
@@ -387,7 +305,7 @@
             <li>ALM5252 for several omega stages</li>
 			<li>Dantarion for the Alternate Stage Loader and Custom Sound Engine</li>
 			<li>PyotrLuzhin for updated versions of said codes</li>
-			<li>Phanton Wings for the File Patch Code and Stage Roster Expansion System</li>
+			<li>Phantom Wings for the File Patch Code and Stage Roster Expansion System</li>
 		</ul>
 	</p>
 </body>
