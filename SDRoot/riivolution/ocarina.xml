@@ -167,7 +167,6 @@
 		<file external="/private/wii/app/RSBE/pf/sound/strm/X07.brstm" disc="/sound/strm/X07.brstm"/>
 		<!-- Stages -->
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGBATTLEFIELD_X.pac" disc="/stage/melee/STGBATTLEFIELD.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGFINAL_Z.pac" disc="/stage/melee/STGFINAL.pac" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM02_L.pac" disc="/stage/melee/STGCUSTOM02.pac" create="true" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM03_L.pac" disc="/stage/melee/STGCUSTOM03.pac" create="true" />
 		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM04_L.pac" disc="/stage/melee/STGCUSTOM04.pac" create="true" />
