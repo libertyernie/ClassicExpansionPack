@@ -168,7 +168,7 @@ namespace DocumentationGenerator.Controllers
 
             List<CEPStage> stages = new List<CEPStage>();
             IList<string> firstLine = null;
-            string csv = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\SD\DocumentationGenerator\stages.csv";
+            string csv = @"C:\Users\admin\Documents\BrawlHacks\classic\mini\ClassicExpansionPack\DocumentationGenerator\stages.csv";
             foreach (string line in System.IO.File.ReadAllLines(csv, Encoding.UTF8)) {
                 if (firstLine == null) {
                     firstLine = split(line);
@@ -190,12 +190,12 @@ namespace DocumentationGenerator.Controllers
                 }
             }
 
-            byte[] gct = System.IO.File.ReadAllBytes(@"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\SD\codes\RSBE01.gct");
+            byte[] gct = System.IO.File.ReadAllBytes(@"C:\Users\admin\Documents\BrawlHacks\classic\mini\ClassicExpansionPack\codes\RSBE01.gct");
             var sss = new BrawlManagerLib.CustomSSSCodeset(gct);
 
-            ResourceNode sc_selmap = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\SD\private\wii\app\RSBE\pf\menu2\sc_selmap.pac");
+            ResourceNode sc_selmap = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\mini\ClassicExpansionPack\private\wii\app\RSBE\pf\menu2\sc_selmap.pac");
 
-            string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\SD\private\wii\app\RSBE\pf\module";
+            string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\mini\ClassicExpansionPack\private\wii\app\RSBE\pf\module";
             foreach (CEPStage s in stages) {
                 try {
                     string relname = StageIDMap.RelNameForPac(s.Filename, true);
