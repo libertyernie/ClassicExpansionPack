@@ -168,7 +168,7 @@ namespace DocumentationGenerator.Controllers
 
             List<CEPStage> stages = new List<CEPStage>();
             IList<string> firstLine = null;
-            string csv = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\DocumentationGenerator\stages.csv";
+            string csv = @"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\DocumentationGenerator\stages.csv";
             foreach (string line in System.IO.File.ReadAllLines(csv, Encoding.UTF8)) {
                 if (firstLine == null) {
                     firstLine = split(line);
@@ -190,12 +190,12 @@ namespace DocumentationGenerator.Controllers
                 }
             }
 
-            byte[] gct = System.IO.File.ReadAllBytes(@"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\codes\RSBE01.gct");
+            byte[] gct = System.IO.File.ReadAllBytes(@"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\SDRoot\codes\RSBE01.gct");
             var sss = new BrawlManagerLib.CustomSSSCodeset(gct);
 
-            ResourceNode sc_selmap = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\menu2\sc_selmap.pac");
+            ResourceNode sc_selmap = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\menu2\sc_selmap.pac");
 			
-			string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\module";
+			string relpath = @"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\module";
             foreach (CEPStage s in stages) {
                 try {
                     string relname = StageIDMap.RelNameForPac(s.Filename, true);
@@ -218,9 +218,9 @@ namespace DocumentationGenerator.Controllers
 				}
             }
 			
-			ResourceNode info_pac = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\info2\info.pac");
+			ResourceNode info_pac = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\info2\info.pac");
 			MSBinNode info = (MSBinNode)info_pac.FindChild("MiscData[140]", true);
-			ResourceNode common2 = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\system\common2.pac");
+			ResourceNode common2 = NodeFactory.FromFile(null, @"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\system\common2.pac");
 			var common2_titledata = new List<SongNameBar.SongIndexEntry>(0);
 			foreach (ResourceNode child in common2.Children) {
 				if (child is Common2MiscDataNode) {
@@ -235,7 +235,7 @@ namespace DocumentationGenerator.Controllers
 				}
 			}
 
-			List<string> brstms = Directory.EnumerateFiles(@"C:\Users\admin\Documents\BrawlHacks\classic\8.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\sound\strm")
+			List<string> brstms = Directory.EnumerateFiles(@"C:\Users\admin\Documents\BrawlHacks\classic\9.0s\ClassicExpansionPack\SDRoot\private\wii\app\RSBE\pf\sound\strm")
 				.Select(s => Path.GetFileNameWithoutExtension(s)).ToList();
 
 			var sdsl = new StageDependentSongLoader(gct);

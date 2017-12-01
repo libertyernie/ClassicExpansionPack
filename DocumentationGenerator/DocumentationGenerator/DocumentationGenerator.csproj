@@ -44,10 +44,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="BrawlLib">
-      <HintPath>..\..\..\..\..\Visual Studio 2015\Projects\BrawlManagers\BrawlManagerLib\bin\x86\Debug\BrawlLib.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Visual Studio 2015\Projects\BrawlManagers\BrawlManagerLib\bin\x86\Debug\BrawlLib.dll</HintPath>
     </Reference>
     <Reference Include="BrawlManagerLib">
-      <HintPath>..\..\..\..\..\Visual Studio 2015\Projects\BrawlManagers\BrawlManagerLib\bin\x86\Debug\BrawlManagerLib.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Visual Studio 2015\Projects\BrawlManagers\BrawlManagerLib\bin\x86\Debug\BrawlManagerLib.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
@@ -55,7 +55,7 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="OpenTK">
-      <HintPath>..\..\..\..\..\Visual Studio 2015\Projects\BrawlManagers\BrawlManagerLib\bin\x86\Debug\OpenTK.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\Visual Studio 2015\Projects\BrawlManagers\BrawlManagerLib\bin\x86\Debug\OpenTK.dll</HintPath>
     </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
