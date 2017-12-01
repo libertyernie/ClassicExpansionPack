@@ -2,8 +2,8 @@
 <id game="RSB" />
 <options>
 	<section name="Smash Bros. Brawl">
-		<option name="Classic Expansion Pack" default="1">
-			<choice name="Enabled">
+		<option name="Stage Pack" default="1">
+			<choice name="CEP 9.0s (No Alternates)">
 				<patch id="standard-files" />
 				<patch id="ocarina-common" />
 				<patch id="music" />

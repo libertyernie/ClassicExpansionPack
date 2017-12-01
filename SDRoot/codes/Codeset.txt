@@ -165,7 +165,7 @@ Save Tags in Replays
 
 CLASSIC EXPANSION PACK
 
-Classic Expansion SSS v8 - normal Casle Siege and Lylat Cruise
+Classic Expansion SSS v9
 * 046B8F5C 7C802378
 * 046B8F64 7C6300AE
 * 040AF618 5460083C

@@ -1,4 +1,8 @@
 <?xml version="1.0"?>
 <riivolution version="2">
-  <option id="Smash Bros. BrawlClassic Expansion Pack" default="1"/>
+  <option id="Smash Bros. BrawlStage Pack" default="1"/>
+  <option id="Smash Bros. BrawlStatic Pokemon Stadium 2" default="0"/>
+  <option id="Smash Bros. BrawlStatic WarioWare, Inc." default="0"/>
+  <option id="Smash Bros. BrawlDream Land Without Wind" default="0"/>
+  <option id="Smash Bros. BrawlGreat Bay Swimmable Water" default="0"/>
 </riivolution>
