@@ -267,7 +267,7 @@ namespace DocumentationGenerator.Controllers
 			}
 
 			var expStages = stages.Where(s => s.Filename.Contains("CUSTOM"));
-			return View("Index", new MainModel {
+			return View(new MainModel {
 				Stages = stages.Except(expStages).Concat(expStages).ToList(),
 				Songs = brstms.Select(b => {
 					var song = SongIDMap.Songs.SingleOrDefault(s => s.Filename == b);

@@ -1,0 +1,212 @@
+﻿@model DocumentationGenerator.Models.MainModel
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Omega Expansion Pack 9.0r</title>
+    <style type="text/css">
+        h1, h2, h3, h4, h5, h6 {
+            font-family: Helvetica, Arial, monospace;
+        }
+
+        h1 {
+            font-size: 36pt;
+        }
+
+        h2 {
+            font-size: 24pt;
+        }
+
+        .stagetable {
+            border-collapse: collapse;
+        }
+
+        .stagetable td {
+            border: 2px solid black;
+        }
+
+        .stagetable.alternate {
+            margin-left: 36px;
+        }
+
+        .stagetable .icon {
+            width: 68px;
+        }
+
+        .stagetable.alternate .icon {
+            font-size: 10pt;
+            font-family: Helvetica, Arial, sans-serif;
+            width: 32px;
+            text-align: center;
+        }
+
+        .stagetable .song {
+            font-style: italic;
+        }
+
+        .stagetable .stagename {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            font-weight: bold;
+            width: 400px;
+        }
+
+        .stagetable .pacname {
+            font-family: monospace;
+            font-size: 12pt;
+            text-align: right;
+            width: 430px;
+        }
+
+        .stagetable .notes {
+            font-size: 10pt;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center">
+        Omega Expansion Pack 9.0r<br>
+        <small>for Super Smash Bros. Brawl (+ Riivolution)</small>
+    </h1>
+    <p>
+        This is an add-on for Super Smash Bros. Brawl which replaces
+        all stages with Omega stages of the style introduced in the
+        Wii U and 3DS versions of Super Smash Bros.
+    </p>
+    <p>
+        This version of the pack assumes you are familiar with using Riivolution.
+    </p>
+    <hr size="2" width="100%">
+    <p>
+        Official KC-MM thread for the Classic Expansion Pack: <a href="http://forums.kc-mm.com/index.php?topic=20291.0">http://forums.kc-mm.com/index.php?topic=20291.0</a><br>
+    </p>
+    <hr size="2" width="100%">
+    <h3>Notes</h3>
+    <ul>
+        <li>
+            Any additional changes I made to the stages, as originally
+            posted on BrawlVault, are noted.
+        </li>
+        <li>
+            All stages will be available on “random”, regardless of
+            whether they are enabled on the Random Stage Select screen. You
+            can turn this off by removing the Enable Random Expansion Stages
+            code from Codeset.txt and making a new GCT file from it.
+        </li>
+    </ul>
+    <hr size="2" width="100%">
+    <h3>Technical Notes</h3>
+    <p>
+        STGCUSTOM01 is skipped, and some STGCUSTOM icons are not in order.
+        This is because this pack was forked from the more expansive
+        Classic Expansion Pack 9.0.
+    </p>
+	<hr>
+	<p>
+		For each stage below, the creator of the stage is noted. Let me know
+		on KC:MM if I've forgot to mention anyone. Creators of the codes used
+		in the codeset are credited in Codeset.txt.
+	</p>
+    @foreach (var stage in Model.Stages) {
+        int lastUnderscore = stage.Filename.LastIndexOf('_');
+        <table class="stagetable @(stage.Alternate ? "alternate" : "")" border="1" cellpadding="2" cellspacing="2">
+            <tbody>
+                <tr>
+                    @if (stage.PngIcon != null) {
+                        <td rowspan="2" class="icon" valign="top">
+                            <img src="data:image/png;base64,@(Convert.ToBase64String(stage.PngIcon))" />
+                        </td>
+                    } else {
+                        <td rowspan="2" class="icon" valign="middle">
+                            @if (lastUnderscore > 0) {
+                                switch (stage.Filename[lastUnderscore + 1]) {
+                                    case 'L':
+                                        <span class="altkey">+L</span>
+                                        break;
+                                    case 'R':
+                                        <span class="altkey">+R</span>
+                                        break;
+                                    case 'Z':
+                                        <span class="altkey">+Z or +ZR</span>
+                                        break;
+                                    case 'X':
+                                        <span class="altkey">+X</span>
+                                        break;
+                                }
+                            }
+                        </td>
+                    }
+                    <td class="game" valign="top" colspan="@(stage.Alternate ? 2 : 1)">
+                        @stage.Source
+                    </td>
+                    @if (!stage.Alternate) {
+                        <td class="song" valign="top">
+@stage.SongFilename                            @stage.SongTitle
+                        </td>
+                    }
+                </tr>
+                <tr>
+                    <td class="stagename" valign="top">
+                        @stage.Name
+                    </td>
+                    <td class="pacname" valign="bottom">
+                        (@stage.ModuleBase)
+                        <br />
+                        @stage.Filename
+                    </td>
+                </tr>
+                @if (stage.Link != null || stage.Imported || stage.Author != null || stage.Notes != null) {
+                    <tr>
+                        <td class="notes" colspan="3" valign="top">
+                            @if (stage.Link?.StartsWith("http") == true) {
+                                <a href="@stage.Link">@stage.Link</a><br />
+                            } else {
+                                <b>@stage.Link</b><br />
+                            }
+                            @if (stage.Imported) {
+                                @:Imported from SSB4 by: @stage.Author<br />
+                            } else if (stage.Author != null) {
+                                @:Author(s): @stage.Author<br />
+                            }
+                            @if (stage.Notes != null) {
+                                <b><i>@stage.Notes</i></b>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+        <br />
+    }
+    <hr />
+    <p>Full song replacement list:</p>
+    <table>
+        <tr>
+            <th>Filename</th>
+            <th>Title</th>
+            <th>Replaces</th>
+        </tr>
+            @foreach (var s in Model.Songs) {
+                <tr>
+                    <td>@s.SongFilename</td>
+                    <td>@s.SongTitle</td>
+                    <td>@s.OriginalSongTitle</td>
+                </tr>
+            }
+    </table>
+    <hr />
+	<p>
+		Special thanks:
+		<ul>
+			<li>Mewtwo2000 for creating many SSB64 and Melee stages</li>
+			<li>DSX8, Edwguard Flows, and CaliburZx for SSB4 stages</li>
+            <li>ALM5252 for several omega stages</li>
+			<li>Dantarion for the Custom Sound Engine</li>
+			<li>PyotrLuzhin for updated versions of said codes</li>
+			<li>Phantom Wings for the File Patch Code and Stage Roster Expansion System</li>
+		</ul>
+	</p>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>Classic Expansion Pack 9.0s</title>
+    <title>Classic Expansion Pack 9.0r</title>
     <style type="text/css">
         h1, h2, h3, h4, h5, h6 {
             font-family: Helvetica, Arial, monospace;
@@ -65,82 +65,20 @@
 </head>
 <body>
     <h1 align="center">
-        Classic Expansion Pack 9.0s<br>
-        <small>for Super Smash Bros. Brawl &ndash; ASRL included</small>
+        Classic Expansion Pack 9.0r<br>
+        <small>for Super Smash Bros. Brawl (+ Riivolution)</small>
     </h1>
     <p>
-        This version of the Classic Expansion Pack is an add-on for Super
-        Smash Bros. Brawl, containing 37 additional stages that can be
+        This is an add-on for Super
+        Smash Bros. Brawl, containing additional stages that can be
         used in multiplayer mode.
     </p>
     <p>
-        These stages have been combined into a pack that adds them to the
-        Brawl stage roster, without replacing any existing stages. This is
-        done with the help of Phantom Wings' Stage Roster Expansion
-        System, a code that gives the framework for adding stages to
-        Brawl.
-    </p>
-    <p>
-        This pack contains several Wii music files (.brstm), which are
-		added to the game using the Custom Sound Engine code. Song titles
-		for these songs may not appear if you're using Gecko, but they
-		should show up with Riivolution.
+        This version of the pack assumes you are familiar with using Riivolution.
     </p>
     <hr size="2" width="100%">
     <p>
         Official KC-MM thread for the Classic Expansion Pack: <a href="http://forums.kc-mm.com/index.php?topic=20291.0">http://forums.kc-mm.com/index.php?topic=20291.0</a><br>
-    </p>
-    <hr size="2" width="100%">
-    <h3>
-        Requirements
-    </h3>
-    <ul>
-        <li>
-            Wii or Wii U console (does not need to have any kind of
-            homebrew installed)
-        </li>
-        <li>An American copy of Super Smash Bros. Brawl</li>
-        <li>An SD card</li>
-    </ul>
-    <h3>
-        Instructions
-    </h3>
-    <ul>
-        <li>
-            Remove all Stage Builder stages from your SD card and your
-            Wii. (You can back them up on another SD card or on your
-            computer – they're in /private/wii/app/RSBE/st.)
-        </li>
-        <li>
-            Copy the “codes” and “private” folders and the “boot.elf” and
-            “gameconfig.txt” files to the root of your SD card. (Riivolution
-			users should copy the “riivolution” folder too.) If you're
-            asked to merge a folder, choose yes. If you're asked to
-            overwrite a file, choose yes for that too. (If you have custom
-            portraits or stage icons in sc_selmap.pac, you should back that up
-            first.)
-        </li>
-        <li>
-            Once in Brawl's main menu, load the Classic Expansion Pack by
-            inserting the SD card and going to Options &gt; Stage Builder.
-            Press A (for “Launch Game”) when Gecko OS loads.
-            (If you have homebrew installed, you can just launch either Gecko
-            OS or Riivolution from there.)
-        </li>
-    </ul>
-    <p>
-        If you want to keep your own mu_menumain.pac, export MiscData[80]
-        from sc_selmap.pac and use it to replace MiscData[0] in
-        mu_menumain.pac.
-    </p>
-    <p>
-        <b>
-            NOTE: Unlike pre-7.0s versions of the pack, this pack comes with a
-            sc_selmap.pac instead of a common5.pac.
-        </b> If you have your own
-        common5.pac, replace the “sc_selmap_en” section in it with my
-        sc_selmap.pac file. (After doing this, sc_selmap.pac does not need
-        to be on the SD card.)<br>
     </p>
     <hr size="2" width="100%">
     <h3>Notes</h3>
@@ -155,87 +93,12 @@
             can turn this off by removing the Enable Random Expansion Stages
             code from Codeset.txt and making a new GCT file from it.
         </li>
-        <li>
-            Stages with alternate versions are denoted on the stage select
-            screen to the lower-left of the stage name, using the letters
-            on the buttons to hold.
-            <ul>
-                <li>
-                    For example, the text under Battlefield reads "LRZ/X→Ω",
-                    meaning that Battlefield has alternate versions when
-                    holding L, R, Z, or X, and that the X alternate is an
-                    omega stage.
-                </li>
-                <li>
-                    Some of the Omega stages are from ALM5252's Project M
-                    Omega Build, and are not necessarily based on Omega stages
-                    from the newer Super Smash Bros. games. These stages will
-                    be noted on the Stage Select screen with a lowercase omega
-                    (ω) and below by listing ALM5252’s Omega Build as the source.
-                </li>
-            </ul>
-        </li>
     </ul>
-    <hr size="2" width="100%">
-    <h3>Riivolution Notes</h3>
-    <p>
-        Riivolution users will still need to use common5; sc_selmap.pac will not
-        be used. The ocarina.xml file loads one from the /riivolution folder,
-        although you can move it to private/wii/app/RSBE/pf/system if you like.
-    </p>
-    <p>
-        Since the ASRL code cannot use the SD card while Riivolution is using
-        it, Riivolution users will not be able to use alternate stages. However,
-        you will be given the option of "Omega Stages Only" in addition to the
-        standard "Enabled" option in the Riivolution menu.
-    </p>
-    <p>
-        In "Enabled" mode, Riivolution will use the standard versions of Lylat
-        Cruise and Castle Siege, not the STGCUSTOM static versions listed below.
-    </p>
     <hr size="2" width="100%">
     <h3>Technical Notes</h3>
     <p>
-        The Alternate Stage/Rel Loader (ASRL) code is enabled for every stage
-        in this pack (except Flat Zone 2 and Summit), loading certain alternate
-        .pac and .rel files for each stage when a certain button is held:
-    </p>
-    <table>
-        <tr>
-            <th>Button</th>
-            <th>.pac</th>
-            <th>.rel</th>
-        </tr>
-        <tr>
-            <td>None</td>
-            <td>STG***.pac</td>
-            <td>st_***.rel</td>
-        </tr>
-        <tr>
-            <td>L (Wiimote B)</td>
-            <td>STG***_L.pac</td>
-            <td>st_***_L.rel</td>
-        </tr>
-        <tr>
-            <td>R</td>
-            <td>STG***_R.pac</td>
-            <td>st_***_R.rel</td>
-        </tr>
-        <tr>
-            <td>Z or ZR</td>
-            <td>STG***_Z.pac</td>
-            <td>st_***_Z.rel</td>
-        </tr>
-        <tr>
-            <td>X (Battlefield only)</td>
-            <td>STG***_X.pac</td>
-            <td>st_***_X.rel</td>
-        </tr>
-    </table>
-    <p>
-        There is no technical reason that STGCUSTOM01 is skipped; this is
-        due to the changes I've made in this pack over the course of
-        development. A few STGCUSTOM icons are not in order. The table
+        There is no real reason that STGCUSTOM01 is skipped.
+        Also, a few STGCUSTOM icons are not in order. The table
         below lists STGCUSTOMs in stage select screen order:
     </p>
     <table>
@@ -244,19 +107,11 @@
             <th>Icon</th>
         </tr>
         <tr>
-            <td>Lylat Cruise (STGCUSTOM27)</td>
-            <td>15 (same icon as original Lylat Cruise)</td>
-        </tr>
-        <tr>
-            <td>Castle Siege (STGCUSTOM28)</td>
-            <td>21 (same icon as original Castle Siege)</td>
-        </tr>
-        <tr>
             <td>Online Practice Stage (STGCUSTOM25)</td>
             <td>79</td>
         </tr>
         <tr>
-            <td>Target Smash!! (STGCUSTOM26)</td>
+            <td>Venom (STGCUSTOM26)</td>
             <td>60</td>
         </tr>
         <tr>
@@ -272,12 +127,6 @@
             <td>61-78</td>
         </tr>
     </table>
-    <p>
-        The standard versions of Lylat Cruise and Castle Siege are replaced
-        with static versions (denoted on the SSS with "St.") because the
-        originals cause the ASRL code to stop working properly until Brawl
-        is closed.
-    </p>
 	<hr>
 	<p>
 		For each stage below, the creator of the stage is noted. Let me know
@@ -1683,7 +1532,7 @@
 			<li>Mewtwo2000 for creating many SSB64 and Melee stages</li>
 			<li>DSX8, Edwguard Flows, and CaliburZx for SSB4 stages</li>
             <li>ALM5252 for several omega stages</li>
-			<li>Dantarion for the Alternate Stage Loader and Custom Sound Engine</li>
+			<li>Dantarion for the Custom Sound Engine</li>
 			<li>PyotrLuzhin for updated versions of said codes</li>
 			<li>Phantom Wings for the File Patch Code and Stage Roster Expansion System</li>
 		</ul>
@@ -1691,7 +1540,7 @@
 
 <!-- Visual Studio Browser Link -->
 <script type="application/json" id="__browserLink_initializationData">
-    {"appName":"Firefox","requestId":"521ea5ebf8154bda90cae779c10a591a"}
+    {"appName":"Firefox","requestId":"5fb842476b8243a09b9b131776b5304e"}
 </script>
 <script type="text/javascript" src="http://localhost:57059/5734f5ae003240cb942a761bccf2e1f3/browserLink" async="async"></script>
 <!-- End Browser Link -->

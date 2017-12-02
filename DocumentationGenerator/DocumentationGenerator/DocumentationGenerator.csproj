@@ -114,7 +114,8 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="Views\Default\Index.cshtml" />
+    <Content Include="Views\Default\CEP.cshtml" />
+    <Content Include="Views\Default\Omega.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
