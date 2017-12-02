@@ -37,227 +37,192 @@
 	</section>
 </options>
 	<patch id="standard-files">
-		<folder external="/private/wii/app/RSBE/pf" disc="/" recursive="true"/>
-		<!--These aren't all the _en files on the disc, but they're probably the only ones you'll need.-->
-		<file external="/private/wii/app/RSBE/pf/fighter/captain/FitCaptain01.pac" disc="/fighter/captain/FitCaptain01_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/captain/FitCaptain01.pcs" disc="/fighter/captain/FitCaptain01_en.pcs"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/poketrainer/FitPokeTrainerFinal00.pac" disc="/fighter/poketrainer/FitPokeTrainerFinal00_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/poketrainer/FitPokeTrainerFinal01.pac" disc="/fighter/poketrainer/FitPokeTrainerFinal01_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/poketrainer/FitPokeTrainerFinal02.pac" disc="/fighter/poketrainer/FitPokeTrainerFinal02_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/poketrainer/FitPokeTrainerFinal03.pac" disc="/fighter/poketrainer/FitPokeTrainerFinal03_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/poketrainer/FitPokeTrainerFinal04.pac" disc="/fighter/poketrainer/FitPokeTrainerFinal04_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/fighter/poketrainer/FitPokeTrainerFinalSpy.pac" disc="/fighter/poketrainer/FitPokeTrainerFinalSpy_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/info2/info.pac" disc="/info2/info_en.pac"/>
-		<file external="/private/wii/app/RSBE/pfmenu2/mu_menumain.pac" disc="/menu2/mu_menumain_en.pac"/> <!--Gecko looks in pfmenu2 for mu_menumain-->
-		<file external="/private/wii/app/RSBE/pf/menu2/sc_selcharacter2.pac" disc="/menu2/sc_selcharacter2_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/menu2/sc_selcharacter.pac" disc="/menu2/sc_selcharacter_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/menu2/sc_selmap.pac" disc="/menu2/sc_selmap_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/menu2/sc_title.pac" disc="/menu2/sc_title_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXONETT.PAC" disc="/stage/melee/STGDXONETT_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXPSTADIUM.PAC" disc="/stage/melee/STGDXPSTADIUM_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGGW.PAC" disc="/stage/melee/STGGW_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGHOMERUN.PAC" disc="/stage/melee/STGHOMERUN_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMADEIN.PAC" disc="/stage/melee/STGMADEIN_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGNEWPORK.PAC" disc="/stage/melee/STGNEWPORK_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGPICTCHAT.PAC" disc="/stage/melee/STGPICTCHAT_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGRESULT.PAC" disc="/stage/melee/STGRESULT_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGSTADIUM.PAC" disc="/stage/melee/STGSTADIUM_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_00.PAC" disc="/stage/melee/STGVILLAGE_00_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_01.PAC" disc="/stage/melee/STGVILLAGE_01_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_02.PAC" disc="/stage/melee/STGVILLAGE_02_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_03.PAC" disc="/stage/melee/STGVILLAGE_03_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_04.PAC" disc="/stage/melee/STGVILLAGE_04_en.PAC"/>
-		<file external="/private/wii/app/RSBE/pf/system/common2.pac" disc="/system/common2_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/system/common3.pac" disc="/system/common3_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/system/common4.pac" disc="/system/common4_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/system/common5.pac" disc="/system/common5_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/system/common.pac" disc="/system/common_en.pac"/>
+		<folder external="/riivolution/classic_expansion_pack" disc="/" recursive="true"/>
 		<!-- Expansion stages must be included here because they are not present on the disc. Note the create="true" parameter. -->
-		<file external="/private/wii/app/RSBE/pf/module/st_custom01.rel" disc="/module/st_custom01.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom02.rel" disc="/module/st_custom02.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom03.rel" disc="/module/st_custom03.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom04.rel" disc="/module/st_custom04.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom05.rel" disc="/module/st_custom05.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom06.rel" disc="/module/st_custom06.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom07.rel" disc="/module/st_custom07.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom08.rel" disc="/module/st_custom08.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom09.rel" disc="/module/st_custom09.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0A.rel" disc="/module/st_custom0A.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0B.rel" disc="/module/st_custom0B.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0C.rel" disc="/module/st_custom0C.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0D.rel" disc="/module/st_custom0D.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0E.rel" disc="/module/st_custom0E.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0F.rel" disc="/module/st_custom0F.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom10.rel" disc="/module/st_custom10.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom11.rel" disc="/module/st_custom11.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom12.rel" disc="/module/st_custom12.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom13.rel" disc="/module/st_custom13.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom14.rel" disc="/module/st_custom14.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom15.rel" disc="/module/st_custom15.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom16.rel" disc="/module/st_custom16.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom17.rel" disc="/module/st_custom17.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom18.rel" disc="/module/st_custom18.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom19.rel" disc="/module/st_custom19.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1A.rel" disc="/module/st_custom1A.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1B.rel" disc="/module/st_custom1B.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1C.rel" disc="/module/st_custom1C.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1D.rel" disc="/module/st_custom1D.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1E.rel" disc="/module/st_custom1E.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1f.rel" disc="/module/st_custom1f.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom20.rel" disc="/module/st_custom20.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom21.rel" disc="/module/st_custom21.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom22.rel" disc="/module/st_custom22.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom23.rel" disc="/module/st_custom23.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom24.rel" disc="/module/st_custom24.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom25.rel" disc="/module/st_custom25.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom26.rel" disc="/module/st_custom26.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom27.rel" disc="/module/st_custom27.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/module/st_custom28.rel" disc="/module/st_custom28.rel" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM01.pac" disc="/stage/melee/STGCUSTOM01.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM02.pac" disc="/stage/melee/STGCUSTOM02.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM03.pac" disc="/stage/melee/STGCUSTOM03.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM04.pac" disc="/stage/melee/STGCUSTOM04.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM05.pac" disc="/stage/melee/STGCUSTOM05.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM06.pac" disc="/stage/melee/STGCUSTOM06.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM07.pac" disc="/stage/melee/STGCUSTOM07.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM08.pac" disc="/stage/melee/STGCUSTOM08.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM09.pac" disc="/stage/melee/STGCUSTOM09.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0A.pac" disc="/stage/melee/STGCUSTOM0A.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0B.pac" disc="/stage/melee/STGCUSTOM0B.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0C.pac" disc="/stage/melee/STGCUSTOM0C.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0D.pac" disc="/stage/melee/STGCUSTOM0D.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0E.pac" disc="/stage/melee/STGCUSTOM0E.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0F.pac" disc="/stage/melee/STGCUSTOM0F.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM10.pac" disc="/stage/melee/STGCUSTOM10.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM11.pac" disc="/stage/melee/STGCUSTOM11.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM12.pac" disc="/stage/melee/STGCUSTOM12.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM13.pac" disc="/stage/melee/STGCUSTOM13.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM14.pac" disc="/stage/melee/STGCUSTOM14.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM15.pac" disc="/stage/melee/STGCUSTOM15.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM16.pac" disc="/stage/melee/STGCUSTOM16.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM17.pac" disc="/stage/melee/STGCUSTOM17.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM18.pac" disc="/stage/melee/STGCUSTOM18.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM19.pac" disc="/stage/melee/STGCUSTOM19.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1A.pac" disc="/stage/melee/STGCUSTOM1A.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1B.pac" disc="/stage/melee/STGCUSTOM1B.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1C.pac" disc="/stage/melee/STGCUSTOM1C.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1D.pac" disc="/stage/melee/STGCUSTOM1D.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1E.pac" disc="/stage/melee/STGCUSTOM1E.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1F.pac" disc="/stage/melee/STGCUSTOM1F.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM20.pac" disc="/stage/melee/STGCUSTOM20.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM21.pac" disc="/stage/melee/STGCUSTOM21.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM22.pac" disc="/stage/melee/STGCUSTOM22.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM23.pac" disc="/stage/melee/STGCUSTOM23.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM24.pac" disc="/stage/melee/STGCUSTOM24.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM25.pac" disc="/stage/melee/STGCUSTOM25.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM26.pac" disc="/stage/melee/STGCUSTOM26.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM27.pac" disc="/stage/melee/STGCUSTOM27.pac" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM28.pac" disc="/stage/melee/STGCUSTOM28.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom01.rel" disc="/module/st_custom01.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom02.rel" disc="/module/st_custom02.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom03.rel" disc="/module/st_custom03.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom04.rel" disc="/module/st_custom04.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom05.rel" disc="/module/st_custom05.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom06.rel" disc="/module/st_custom06.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom07.rel" disc="/module/st_custom07.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom08.rel" disc="/module/st_custom08.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom09.rel" disc="/module/st_custom09.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0A.rel" disc="/module/st_custom0A.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0B.rel" disc="/module/st_custom0B.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0C.rel" disc="/module/st_custom0C.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0D.rel" disc="/module/st_custom0D.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0E.rel" disc="/module/st_custom0E.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0F.rel" disc="/module/st_custom0F.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom10.rel" disc="/module/st_custom10.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom11.rel" disc="/module/st_custom11.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom12.rel" disc="/module/st_custom12.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom13.rel" disc="/module/st_custom13.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom14.rel" disc="/module/st_custom14.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom15.rel" disc="/module/st_custom15.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom16.rel" disc="/module/st_custom16.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom17.rel" disc="/module/st_custom17.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom18.rel" disc="/module/st_custom18.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom19.rel" disc="/module/st_custom19.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1A.rel" disc="/module/st_custom1A.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1B.rel" disc="/module/st_custom1B.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1C.rel" disc="/module/st_custom1C.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1D.rel" disc="/module/st_custom1D.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1E.rel" disc="/module/st_custom1E.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1f.rel" disc="/module/st_custom1f.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom20.rel" disc="/module/st_custom20.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom21.rel" disc="/module/st_custom21.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom22.rel" disc="/module/st_custom22.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom23.rel" disc="/module/st_custom23.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom24.rel" disc="/module/st_custom24.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom25.rel" disc="/module/st_custom25.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom26.rel" disc="/module/st_custom26.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom27.rel" disc="/module/st_custom27.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/module/st_custom28.rel" disc="/module/st_custom28.rel" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM01.pac" disc="/stage/melee/STGCUSTOM01.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM02.pac" disc="/stage/melee/STGCUSTOM02.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM03.pac" disc="/stage/melee/STGCUSTOM03.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM04.pac" disc="/stage/melee/STGCUSTOM04.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM05.pac" disc="/stage/melee/STGCUSTOM05.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM06.pac" disc="/stage/melee/STGCUSTOM06.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM07.pac" disc="/stage/melee/STGCUSTOM07.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM08.pac" disc="/stage/melee/STGCUSTOM08.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM09.pac" disc="/stage/melee/STGCUSTOM09.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0A.pac" disc="/stage/melee/STGCUSTOM0A.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0B.pac" disc="/stage/melee/STGCUSTOM0B.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0C.pac" disc="/stage/melee/STGCUSTOM0C.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0D.pac" disc="/stage/melee/STGCUSTOM0D.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0E.pac" disc="/stage/melee/STGCUSTOM0E.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0F.pac" disc="/stage/melee/STGCUSTOM0F.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM10.pac" disc="/stage/melee/STGCUSTOM10.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM11.pac" disc="/stage/melee/STGCUSTOM11.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM12.pac" disc="/stage/melee/STGCUSTOM12.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM13.pac" disc="/stage/melee/STGCUSTOM13.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM14.pac" disc="/stage/melee/STGCUSTOM14.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM15.pac" disc="/stage/melee/STGCUSTOM15.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM16.pac" disc="/stage/melee/STGCUSTOM16.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM17.pac" disc="/stage/melee/STGCUSTOM17.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM18.pac" disc="/stage/melee/STGCUSTOM18.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM19.pac" disc="/stage/melee/STGCUSTOM19.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1A.pac" disc="/stage/melee/STGCUSTOM1A.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1B.pac" disc="/stage/melee/STGCUSTOM1B.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1C.pac" disc="/stage/melee/STGCUSTOM1C.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1D.pac" disc="/stage/melee/STGCUSTOM1D.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1E.pac" disc="/stage/melee/STGCUSTOM1E.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1F.pac" disc="/stage/melee/STGCUSTOM1F.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM20.pac" disc="/stage/melee/STGCUSTOM20.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM21.pac" disc="/stage/melee/STGCUSTOM21.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM22.pac" disc="/stage/melee/STGCUSTOM22.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM23.pac" disc="/stage/melee/STGCUSTOM23.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM24.pac" disc="/stage/melee/STGCUSTOM24.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM25.pac" disc="/stage/melee/STGCUSTOM25.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM26.pac" disc="/stage/melee/STGCUSTOM26.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM27.pac" disc="/stage/melee/STGCUSTOM27.pac" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM28.pac" disc="/stage/melee/STGCUSTOM28.pac" create="true"/>
 		
-		<file external="/riivolution/noasl/common5.pac" disc="/system/common5_en.pac"/>
-		<memory valuefile="/riivolution/noasl/RSBE01.gct" offset="0x00570000" />
+		<memory valuefile="/riivolution/classic_expansion_pack/RSBE01.gct" offset="0x00570000" />
 	</patch>
 	<patch id="omega">
 		<!-- A lot of these files have different names than what we want to replace - I'll define them individually instead of recursively -->
-		<file external="/private/wii/app/RSBE/pf/system/common2.pac" disc="/system/common2_en.pac"/>
+		<file external="/riivolution/classic_expansion_pack/system/common2.pac" disc="/system/common2_en.pac"/>
 		<file external="/riivolution/omega/common5.pac" disc="/system/common5_en.pac"/>
 		<file external="/private/wii/app/RSBE/pfmenu2/mu_menumain.pac" disc="/menu2/mu_menumain_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/info2/info.pac" disc="/info2/info_en.pac"/>
-		<file external="/private/wii/app/RSBE/pf/menu/strap/StrapEn.pac" disc="/menu/strap/StrapEn.pac"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/X07.brstm" disc="/sound/strm/X07.brstm"/>
+		<file external="/riivolution/classic_expansion_pack/info2/info.pac" disc="/info2/info_en.pac"/>
+		<file external="/riivolution/classic_expansion_pack/menu/strap/StrapEn.pac" disc="/menu/strap/StrapEn.pac"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/X07.brstm" disc="/sound/strm/X07.brstm"/>
 		<!-- Stages -->
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGBATTLEFIELD_X.pac" disc="/stage/melee/STGBATTLEFIELD.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM02_L.pac" disc="/stage/melee/STGCUSTOM02.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM03_L.pac" disc="/stage/melee/STGCUSTOM03.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM04_L.pac" disc="/stage/melee/STGCUSTOM04.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM05_L.pac" disc="/stage/melee/STGCUSTOM05.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM06_L.pac" disc="/stage/melee/STGCUSTOM06.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM07_L.pac" disc="/stage/melee/STGCUSTOM07.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM08_L.pac" disc="/stage/melee/STGCUSTOM08.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM09_L.pac" disc="/stage/melee/STGCUSTOM09.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0A_L.pac" disc="/stage/melee/STGCUSTOM0A.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0E_R.pac" disc="/stage/melee/STGCUSTOM0E.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM17_L.pac" disc="/stage/melee/STGCUSTOM17.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1C_L.pac" disc="/stage/melee/STGCUSTOM1C.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM1F_L.pac" disc="/stage/melee/STGCUSTOM1F.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM20_L.pac" disc="/stage/melee/STGCUSTOM20.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM21_L.pac" disc="/stage/melee/STGCUSTOM21.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM22_L.pac" disc="/stage/melee/STGCUSTOM22.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM23_L.pac" disc="/stage/melee/STGCUSTOM23.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM24_L.pac" disc="/stage/melee/STGCUSTOM24.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM25_Z.pac" disc="/stage/melee/STGCUSTOM25.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGBATTLEFIELD_X.pac" disc="/stage/melee/STGBATTLEFIELD.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM02_L.pac" disc="/stage/melee/STGCUSTOM02.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM03_L.pac" disc="/stage/melee/STGCUSTOM03.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM04_L.pac" disc="/stage/melee/STGCUSTOM04.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM05_L.pac" disc="/stage/melee/STGCUSTOM05.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM06_L.pac" disc="/stage/melee/STGCUSTOM06.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM07_L.pac" disc="/stage/melee/STGCUSTOM07.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM08_L.pac" disc="/stage/melee/STGCUSTOM08.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM09_L.pac" disc="/stage/melee/STGCUSTOM09.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0A_L.pac" disc="/stage/melee/STGCUSTOM0A.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0E_R.pac" disc="/stage/melee/STGCUSTOM0E.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM17_L.pac" disc="/stage/melee/STGCUSTOM17.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1C_L.pac" disc="/stage/melee/STGCUSTOM1C.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM1F_L.pac" disc="/stage/melee/STGCUSTOM1F.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM20_L.pac" disc="/stage/melee/STGCUSTOM20.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM21_L.pac" disc="/stage/melee/STGCUSTOM21.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM22_L.pac" disc="/stage/melee/STGCUSTOM22.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM23_L.pac" disc="/stage/melee/STGCUSTOM23.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM24_L.pac" disc="/stage/melee/STGCUSTOM24.pac" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM25_Z.pac" disc="/stage/melee/STGCUSTOM25.pac" create="true" />
 		<file external="/riivolution/omega/STGCUSTOM27.pac" disc="/stage/melee/STGCUSTOM27.pac" create="true" />
 		<file external="/riivolution/omega/STGCUSTOM28.pac" disc="/stage/melee/STGCUSTOM28.pac" create="true" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCRAYON_L.pac" disc="/stage/melee/STGCRAYON.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDOLPIC_L.pac" disc="/stage/melee/STGDOLPIC.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDONKEY_L.pac" disc="/stage/melee/STGDONKEY.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXCORNERIA_R.pac" disc="/stage/melee/STGDXCORNERIA.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXONETT_L.pac" disc="/stage/melee/STGDXONETT_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXPSTADIUM_L.pac" disc="/stage/melee/STGDXPSTADIUM_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXSHRINE_L.pac" disc="/stage/melee/STGDXSHRINE.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXYORSTER_L.pac" disc="/stage/melee/STGDXYORSTER.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGDXZEBES_L.pac" disc="/stage/melee/STGDXZEBES.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGFZERO_L.pac" disc="/stage/melee/STGFZERO.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGKART_L.pac" disc="/stage/melee/STGKART.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGJUNGLE_L.pac" disc="/stage/melee/STGJUNGLE.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMADEIN_R.pac" disc="/stage/melee/STGMADEIN_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMANSION_L.pac" disc="/stage/melee/STGMANSION.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMETALGEAR_00_L.pac" disc="/stage/melee/STGMETALGEAR_00.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMETALGEAR_01_L.pac" disc="/stage/melee/STGMETALGEAR_01.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMETALGEAR_02_L.pac" disc="/stage/melee/STGMETALGEAR_02.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGNORFAIR_L.pac" disc="/stage/melee/STGNORFAIR.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGOLDIN_L.pac" disc="/stage/melee/STGOLDIN.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGONLINETRAINING_L.pac" disc="/stage/melee/STGONLINETRAINING.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGPIRATES_L.pac" disc="/stage/melee/STGPIRATES.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGSTADIUM_R.pac" disc="/stage/melee/STGSTADIUM_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_00_L.pac" disc="/stage/melee/STGVILLAGE_00_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_01_L.pac" disc="/stage/melee/STGVILLAGE_01_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_02_L.pac" disc="/stage/melee/STGVILLAGE_02_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_03_L.pac" disc="/stage/melee/STGVILLAGE_03_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGVILLAGE_04_L.pac" disc="/stage/melee/STGVILLAGE_04_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom02_L.rel" disc="/module/st_custom02.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom03_L.rel" disc="/module/st_custom03.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom04_L.rel" disc="/module/st_custom04.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom05_L.rel" disc="/module/st_custom05.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom06_L.rel" disc="/module/st_custom06.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom07_L.rel" disc="/module/st_custom07.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom08_L.rel" disc="/module/st_custom08.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom09_L.rel" disc="/module/st_custom09.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0a_L.rel" disc="/module/st_custom0a.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0e_R.rel" disc="/module/st_custom0e.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom17_L.rel" disc="/module/st_custom17.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1c_L.rel" disc="/module/st_custom1c.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom1f_L.rel" disc="/module/st_custom1f.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom20_L.rel" disc="/module/st_custom20.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom21_L.rel" disc="/module/st_custom21.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom22_L.rel" disc="/module/st_custom22.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom23_L.rel" disc="/module/st_custom23.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom24_L.rel" disc="/module/st_custom24.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom25_Z.rel" disc="/module/st_custom25.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCRAYON_L.pac" disc="/stage/melee/STGCRAYON.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDOLPIC_L.pac" disc="/stage/melee/STGDOLPIC.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDONKEY_L.pac" disc="/stage/melee/STGDONKEY.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDXCORNERIA_R.pac" disc="/stage/melee/STGDXCORNERIA.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDXONETT_L.pac" disc="/stage/melee/STGDXONETT_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDXPSTADIUM_L.pac" disc="/stage/melee/STGDXPSTADIUM_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDXSHRINE_L.pac" disc="/stage/melee/STGDXSHRINE.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDXYORSTER_L.pac" disc="/stage/melee/STGDXYORSTER.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGDXZEBES_L.pac" disc="/stage/melee/STGDXZEBES.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGFZERO_L.pac" disc="/stage/melee/STGFZERO.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGKART_L.pac" disc="/stage/melee/STGKART.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGJUNGLE_L.pac" disc="/stage/melee/STGJUNGLE.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGMADEIN_R.pac" disc="/stage/melee/STGMADEIN_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGMANSION_L.pac" disc="/stage/melee/STGMANSION.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGMETALGEAR_00_L.pac" disc="/stage/melee/STGMETALGEAR_00.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGMETALGEAR_01_L.pac" disc="/stage/melee/STGMETALGEAR_01.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGMETALGEAR_02_L.pac" disc="/stage/melee/STGMETALGEAR_02.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGNORFAIR_L.pac" disc="/stage/melee/STGNORFAIR.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGOLDIN_L.pac" disc="/stage/melee/STGOLDIN.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGONLINETRAINING_L.pac" disc="/stage/melee/STGONLINETRAINING.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGPIRATES_L.pac" disc="/stage/melee/STGPIRATES.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGSTADIUM_R.pac" disc="/stage/melee/STGSTADIUM_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGVILLAGE_00_L.pac" disc="/stage/melee/STGVILLAGE_00_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGVILLAGE_01_L.pac" disc="/stage/melee/STGVILLAGE_01_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGVILLAGE_02_L.pac" disc="/stage/melee/STGVILLAGE_02_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGVILLAGE_03_L.pac" disc="/stage/melee/STGVILLAGE_03_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGVILLAGE_04_L.pac" disc="/stage/melee/STGVILLAGE_04_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom02_L.rel" disc="/module/st_custom02.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom03_L.rel" disc="/module/st_custom03.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom04_L.rel" disc="/module/st_custom04.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom05_L.rel" disc="/module/st_custom05.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom06_L.rel" disc="/module/st_custom06.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom07_L.rel" disc="/module/st_custom07.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom08_L.rel" disc="/module/st_custom08.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom09_L.rel" disc="/module/st_custom09.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0a_L.rel" disc="/module/st_custom0a.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0e_R.rel" disc="/module/st_custom0e.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom17_L.rel" disc="/module/st_custom17.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1c_L.rel" disc="/module/st_custom1c.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom1f_L.rel" disc="/module/st_custom1f.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom20_L.rel" disc="/module/st_custom20.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom21_L.rel" disc="/module/st_custom21.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom22_L.rel" disc="/module/st_custom22.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom23_L.rel" disc="/module/st_custom23.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom24_L.rel" disc="/module/st_custom24.rel" create="true" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom25_Z.rel" disc="/module/st_custom25.rel" create="true" />
 		<file external="/riivolution/omega/st_custom27.rel" disc="/module/st_custom27.rel" create="true" />
 		<file external="/riivolution/omega/st_custom28.rel" disc="/module/st_custom28.rel" create="true" />
-		<file external="/private/wii/app/RSBE/pf/module/st_crayon_L.rel" disc="/module/st_crayon.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_dolpic_L.rel" disc="/module/st_dolpic.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_donkey_L.rel" disc="/module/st_donkey.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_dxcorneria_R.rel" disc="/module/st_dxcorneria.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_dxonett_L.rel" disc="/module/st_dxonett.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_dxpstadium_L.rel" disc="/module/st_dxpstadium.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_dxyorster_L.rel" disc="/module/st_dxyorster.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_dxzebes_L.rel" disc="/module/st_dxzebes.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_fzero_L.rel" disc="/module/st_fzero.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_jungle_L.rel" disc="/module/st_jungle.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_kart_L.rel" disc="/module/st_kart.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_madein_R.rel" disc="/module/st_madein.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_mansion_L.rel" disc="/module/st_mansion.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_metalgear_00_L.rel" disc="/module/st_metalgear_00.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_metalgear_01_L.rel" disc="/module/st_metalgear_01.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_metalgear_02_L.rel" disc="/module/st_metalgear_02.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_norfair_L.rel" disc="/module/st_norfair.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_oldin_L.rel" disc="/module/st_oldin.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_otrain_L.rel" disc="/module/st_otrain.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_pirates_L.rel" disc="/module/st_pirates.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_stadium_R.rel" disc="/module/st_stadium.rel" />
-		<file external="/private/wii/app/RSBE/pf/module/st_village_L.rel" disc="/module/st_village.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_crayon_L.rel" disc="/module/st_crayon.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_dolpic_L.rel" disc="/module/st_dolpic.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_donkey_L.rel" disc="/module/st_donkey.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_dxcorneria_R.rel" disc="/module/st_dxcorneria.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_dxonett_L.rel" disc="/module/st_dxonett.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_dxpstadium_L.rel" disc="/module/st_dxpstadium.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_dxyorster_L.rel" disc="/module/st_dxyorster.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_dxzebes_L.rel" disc="/module/st_dxzebes.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_fzero_L.rel" disc="/module/st_fzero.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_jungle_L.rel" disc="/module/st_jungle.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_kart_L.rel" disc="/module/st_kart.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_madein_R.rel" disc="/module/st_madein.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_mansion_L.rel" disc="/module/st_mansion.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_metalgear_00_L.rel" disc="/module/st_metalgear_00.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_metalgear_01_L.rel" disc="/module/st_metalgear_01.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_metalgear_02_L.rel" disc="/module/st_metalgear_02.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_norfair_L.rel" disc="/module/st_norfair.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_oldin_L.rel" disc="/module/st_oldin.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_otrain_L.rel" disc="/module/st_otrain.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_pirates_L.rel" disc="/module/st_pirates.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_stadium_R.rel" disc="/module/st_stadium.rel" />
+		<file external="/riivolution/classic_expansion_pack/module/st_village_L.rel" disc="/module/st_village.rel" />
 		<!-- Ocarina codes -->
 		<memory valuefile="/riivolution/omega/RSBE01.gct" offset="0x00570000" />
 	</patch>
@@ -272,61 +237,61 @@
 		<memory ocarina="true" value="3CA0CC01380000613C80450098058000" offset="0x000018A8" />
 	</patch>
 	<patch id="music">
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C001.brstm" disc="/sound/strm/0000C001.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C002.brstm" disc="/sound/strm/0000C002.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C003.brstm" disc="/sound/strm/0000C003.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C004.brstm" disc="/sound/strm/0000C004.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C005.brstm" disc="/sound/strm/0000C005.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C006.brstm" disc="/sound/strm/0000C006.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C007.brstm" disc="/sound/strm/0000C007.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C008.brstm" disc="/sound/strm/0000C008.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C009.brstm" disc="/sound/strm/0000C009.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C00A.brstm" disc="/sound/strm/0000C00A.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C00B.brstm" disc="/sound/strm/0000C00B.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C00C.brstm" disc="/sound/strm/0000C00C.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C00D.brstm" disc="/sound/strm/0000C00D.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C00E.brstm" disc="/sound/strm/0000C00E.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C00F.brstm" disc="/sound/strm/0000C00F.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C010.brstm" disc="/sound/strm/0000C010.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C011.brstm" disc="/sound/strm/0000C011.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C012.brstm" disc="/sound/strm/0000C012.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C013.brstm" disc="/sound/strm/0000C013.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C014.brstm" disc="/sound/strm/0000C014.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C015.brstm" disc="/sound/strm/0000C015.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C016.brstm" disc="/sound/strm/0000C016.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C017.brstm" disc="/sound/strm/0000C017.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C018.brstm" disc="/sound/strm/0000C018.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C019.brstm" disc="/sound/strm/0000C019.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C01A.brstm" disc="/sound/strm/0000C01A.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C01B.brstm" disc="/sound/strm/0000C01B.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C01C.brstm" disc="/sound/strm/0000C01C.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C01D.brstm" disc="/sound/strm/0000C01D.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C01E.brstm" disc="/sound/strm/0000C01E.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C01F.brstm" disc="/sound/strm/0000C01F.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C020.brstm" disc="/sound/strm/0000C020.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C021.brstm" disc="/sound/strm/0000C021.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C022.brstm" disc="/sound/strm/0000C022.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C023.brstm" disc="/sound/strm/0000C023.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C024.brstm" disc="/sound/strm/0000C024.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C025.brstm" disc="/sound/strm/0000C025.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C026.brstm" disc="/sound/strm/0000C026.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C027.brstm" disc="/sound/strm/0000C027.brstm" create="true"/>
-		<file external="/private/wii/app/RSBE/pf/sound/strm/0000C028.brstm" disc="/sound/strm/0000C028.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C001.brstm" disc="/sound/strm/0000C001.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C002.brstm" disc="/sound/strm/0000C002.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C003.brstm" disc="/sound/strm/0000C003.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C004.brstm" disc="/sound/strm/0000C004.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C005.brstm" disc="/sound/strm/0000C005.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C006.brstm" disc="/sound/strm/0000C006.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C007.brstm" disc="/sound/strm/0000C007.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C008.brstm" disc="/sound/strm/0000C008.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C009.brstm" disc="/sound/strm/0000C009.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C00A.brstm" disc="/sound/strm/0000C00A.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C00B.brstm" disc="/sound/strm/0000C00B.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C00C.brstm" disc="/sound/strm/0000C00C.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C00D.brstm" disc="/sound/strm/0000C00D.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C00E.brstm" disc="/sound/strm/0000C00E.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C00F.brstm" disc="/sound/strm/0000C00F.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C010.brstm" disc="/sound/strm/0000C010.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C011.brstm" disc="/sound/strm/0000C011.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C012.brstm" disc="/sound/strm/0000C012.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C013.brstm" disc="/sound/strm/0000C013.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C014.brstm" disc="/sound/strm/0000C014.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C015.brstm" disc="/sound/strm/0000C015.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C016.brstm" disc="/sound/strm/0000C016.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C017.brstm" disc="/sound/strm/0000C017.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C018.brstm" disc="/sound/strm/0000C018.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C019.brstm" disc="/sound/strm/0000C019.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C01A.brstm" disc="/sound/strm/0000C01A.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C01B.brstm" disc="/sound/strm/0000C01B.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C01C.brstm" disc="/sound/strm/0000C01C.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C01D.brstm" disc="/sound/strm/0000C01D.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C01E.brstm" disc="/sound/strm/0000C01E.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C01F.brstm" disc="/sound/strm/0000C01F.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C020.brstm" disc="/sound/strm/0000C020.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C021.brstm" disc="/sound/strm/0000C021.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C022.brstm" disc="/sound/strm/0000C022.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C023.brstm" disc="/sound/strm/0000C023.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C024.brstm" disc="/sound/strm/0000C024.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C025.brstm" disc="/sound/strm/0000C025.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C026.brstm" disc="/sound/strm/0000C026.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C027.brstm" disc="/sound/strm/0000C027.brstm" create="true"/>
+		<file external="/riivolution/classic_expansion_pack/sound/strm/0000C028.brstm" disc="/sound/strm/0000C028.brstm" create="true"/>
 	</patch>
 	<patch id="static-stadium">
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGSTADIUM_L.pac" disc="/stage/melee/STGSTADIUM_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/module/st_stadium_L.rel" disc="/module/st_stadium.rel" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGSTADIUM_L.pac" disc="/stage/melee/STGSTADIUM_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/module/st_stadium_L.rel" disc="/module/st_stadium.rel" />
 	</patch>
 	<patch id="static-madein">
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGMADEIN_L.pac" disc="/stage/melee/STGMADEIN_en.pac" />
-		<file external="/private/wii/app/RSBE/pf/module/st_madein_L.rel" disc="/module/st_madein.rel" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGMADEIN_L.pac" disc="/stage/melee/STGMADEIN_en.pac" />
+		<file external="/riivolution/classic_expansion_pack/module/st_madein_L.rel" disc="/module/st_madein.rel" />
 	</patch>
 	<patch id="dream-land-nowind">
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM0E_L.pac" disc="/stage/melee/STGCUSTOM0E.pac" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom0e_L.rel" disc="/module/st_custom0e.rel" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM0E_L.pac" disc="/stage/melee/STGCUSTOM0E.pac" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom0e_L.rel" disc="/module/st_custom0e.rel" />
 	</patch>
 	<patch id="great-bay-water">
-		<file external="/private/wii/app/RSBE/pf/stage/melee/STGCUSTOM14_L.pac" disc="/stage/melee/STGCUSTOM14.pac" />
-		<file external="/private/wii/app/RSBE/pf/module/st_custom14_L.rel" disc="/module/st_custom14.rel" />
+		<file external="/riivolution/classic_expansion_pack/stage/melee/STGCUSTOM14_L.pac" disc="/stage/melee/STGCUSTOM14.pac" />
+		<file external="/riivolution/classic_expansion_pack/module/st_custom14_L.rel" disc="/module/st_custom14.rel" />
 	</patch>
 </wiidisc>
