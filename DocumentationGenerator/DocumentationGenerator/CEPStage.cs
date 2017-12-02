@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Web;
 
 namespace DocumentationGenerator {
@@ -49,7 +50,7 @@ namespace DocumentationGenerator {
 
         public bool Alternate {
             get {
-                return Filename.Contains("_");
+                return Regex.IsMatch(Filename, "_[A-Za-z]");
             }
         }
 
