@@ -11,6 +11,10 @@
 				<param name="brawl_root" value="omega" />
 				<patch id="brawl-stage-expansion-pack-shared" />
 			</choice>
+			<choice name="libertyernie's Best Of">
+				<param name="brawl_root" value="best_of" />
+				<patch id="brawl-stage-expansion-pack-shared" />
+			</choice>
 		</option>
 	</section>
 </options>
