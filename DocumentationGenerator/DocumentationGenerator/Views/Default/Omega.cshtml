@@ -99,9 +99,17 @@
     <hr size="2" width="100%">
     <h3>Technical Notes</h3>
     <p>
-        STGCUSTOM01 is skipped, and some STGCUSTOM icons are not in order.
-        This is because this pack was forked from the more expansive
-        Classic Expansion Pack 9.0.
+        The STGCUSTOM icons are not in order. This is because this pack
+        was forked from Classic Expansion Pack 9.0.
+    </p>
+    <p>
+        Stage Builder stages are enabled. If you are using Smash Stack to
+        load Riivolution, you should add the Disable Custom Stages code
+        to your .gct file:
+        <pre>
+Disable Custom Stages 1.1 [Phantom Wings]
+* 046B841C 48000040
+        </pre>
     </p>
 	<hr>
 	<p>
@@ -140,6 +148,7 @@
                     }
                     <td class="game" valign="top" colspan="@(stage.Alternate ? 2 : 1)">
                         @stage.Source
+                        &nbsp;
                     </td>
                     @if (!stage.Alternate) {
                         <td class="song" valign="top">

@@ -50,7 +50,7 @@ namespace DocumentationGenerator {
 
         public bool Alternate {
             get {
-                return Regex.IsMatch(Filename, "_[A-Za-z]");
+                return Regex.IsMatch(Filename, "_[A-Za-z]\\.");
             }
         }
 

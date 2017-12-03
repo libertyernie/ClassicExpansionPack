@@ -2,9 +2,6 @@
 RSBE01
 Smash Bros Brawl (US)
 
-Disable Custom Stages 1.1 [Phantom Wings]
-* 046B841C 48000040
-
 Enable Random Expansion Stages v1.1 [Phantom Wings]:
 * C26B7A6C 00000005
 * 3860001F 2C120000
